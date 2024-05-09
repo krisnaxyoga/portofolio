@@ -83,21 +83,21 @@
                                     <!---->
                                     <!-- This is what your users will see when the form-->
                                     <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
+                                    <!-- <div class="d-none" id="submitSuccessMessage">
                                         <div class="text-center mb-3">
                                             <div class="fw-bolder">Form submission successful!</div>
                                             To activate this form, sign up at
                                             <br />
                                             <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- Submit error message-->
                                     <!---->
                                     <!-- This is what your users will see when there is-->
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
@@ -129,5 +129,31 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script type="text/javascript">
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Menghentikan pengiriman formulir default
+        
+                // Mengambil nilai dari formulir
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var message = document.getElementById('message').value;
+        
+                // Membuat teks pesan dengan data dari formulir
+                var whatsappMessage = "I am very interested in your experience in the web developer field:\n" +
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Phone: " + phone + "\n" +
+                    "Message: " + message;
+        
+                // Membuat tautan WhatsApp dengan pesan yang dibuat
+                var whatsappLink = "https://wa.me/6281238010169?text=" + encodeURIComponent(whatsappMessage);
+        
+                // Buka tautan WhatsApp di jendela atau tab baru
+                window.open(whatsappLink, "_blank");
+            });
+        </script>
+        
+
     </body>
 </html>
