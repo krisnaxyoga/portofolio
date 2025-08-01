@@ -2,514 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>PORTOFOLIO YOGA KRISNA</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Yoga Krisna - Fullstack Web Developer with 5+ years of experience in Laravel, Vue.js, React, and modern web technologies. View my portfolio and certificates." />
+    <meta name="keywords"
+        content="Fullstack Developer, Web Developer, Laravel, Vue.js, React, PHP, JavaScript, Portfolio, Indonesia" />
+    <meta name="author" content="I Wayan Yoga Krisna" />
+    <meta property="og:title" content="Yoga Krisna - Fullstack Web Developer Portfolio" />
+    <meta property="og:description"
+        content="Experienced Fullstack Web Developer specializing in modern web applications with Laravel, Vue.js, and React." />
+    <meta property="og:type" content="website" />
+    <title>YOGA KRISNA PORTFOLIO - Fullstack Web Developer</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
-    <!-- Bootstrap icons-->
+
+    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/wa.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">YOGA KRISNA</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">YOGA KRISNA</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="bi bi-code-slash"></i>
+                    Design • Development
+                </div>
+                <h1 class="hero-title">
+                    I can help your business Get online and build your future
+                </h1>
+                <p class="hero-subtitle">
+                    Fullstack Web Developer with over 5 years of experience in building scalable and user-friendly web
+                    applications using modern technologies.
+                </p>
+                <div class="cta-buttons">
+                    <a href="resume.html" class="btn btn-primary">
+                        <i class="bi bi-file-person"></i>
+                        Resume
+                    </a>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <i class="bi bi-folder"></i>
+                        Projects
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-5 pb-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-5">
-                        <!-- Header text content-->
-                        <div class="text-center text-xxl-start">
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                <div class="text-uppercase">Design &middot; Development </div>
-                            </div>
-                            <div class="fs-3 fw-light text-muted">I can help your business to</div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and
-                                    create your future</span></h1>
-                            <div
-                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                    href="resume.html">Resume</a>
-                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                    href="projects.html">Projects</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <!-- Header profile picture-->
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                            <div class="profile bg-gradient-primary-to-secondary">
-                                <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                <img class="profile-img" src="assets/profile.png" alt="..." />
-                                <div class="dots-1">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-2">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-3">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                                <div class="dots-4">
-                                    <!-- SVG Dots-->
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
-                                        xml:space="preserve">
-                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                            <path
-                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
-                                            </path>
-                                            <path
-                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
-                                            </path>
-                                            <path
-                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <!-- END of SVG dots-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="bg-light py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Certificate</span></h2>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0" src="assets/sertif1.png"
-                                            alt="assets/sertif1.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/Certificate_Mahir-Membuat-Website-dengan-Laravel_I-Wayan-Yoga-Krisna.pdf">view</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0" src="assets/sertif2.png"
-                                            alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/Certificate_Fundamental-Algoritma_I-Wayan-Yoga-Krisna.pdf">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0"
-                                            src="assets/fluttersertif.png" alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/full-stack-laravel-flutter-build-e-wallet-mobile-apps-i-wayan-yoga-krisna.pdf">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0" src="assets/sertifvue.png"
-                                            alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/vue-javascript-framework-i-wayan-yoga-krisna.pdf">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0" src="assets/sertiflama.png"
-                                            alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/sertifikat_course_123_149207_270321140737.pdf">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0"
-                                            src="assets/CERT-9OI9S1H4.jpg" alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/CERT-9OI9S1H4.jpg">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="card shadow rounded-4 border-0 mb-5">
-                                        <img class="card-img-top shadow rounded-4 border-0" src="assets/sertifgetx.png"
-                                            alt="assets/sertif2.png">
-                                        <div class="card-body">
-                                            <a class="btn btn-info text-bg-info text-light fw-bolder"
-                                                style="text-decoration: none" target="_blank"
-                                                href="assets/flutter-getx-i-wayan-yoga-krisna.pdf">view</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="bg-light py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                            <p class="lead fw-light mb-4">Hi, I'm Yoga Krisna</p>
-                            <p class="text-muted">
-                                a Fullstack Web Developer passionate about crafting seamless digital experiences.
-                                <br><br>
-                                With over 5 years of experience, I specialize in building scalable and user-friendly web
-                                applications. My focus is on enhancing the digital journey, particularly for Indonesian
-                                web users, by leveraging cutting-edge technologies.
-                                <br><br>
-                                In this portfolio, you'll find some of my best work, including asmogpsku.com. These
-                                projects reflect my expertise in:
-                            <ul style="list-style: none;">
-                                <li>Front-end development: HTML, CSS, JavaScript, React, Vue.js</li>
-                                <li>Back-end development: PHP, Laravel, Node.js</li>
-                                <li>Database: MySQL, PostgreSQL</li>
-                                <li>Testing: Unit testing, integration testing, end-to-end testing</li>
-                                <li>Version control: Git, GitHub, Gitlab</li>
-                            </ul>
-                            <br><br>
-                            I'm always eager to learn, take on new challenges, and contribute to meaningful projects. I
-                            believe that technology has the power to drive positive change, and I strive to be a part of
-                            that transformation.
-
-                            <br><br>
-
-                            If you're looking for a creative, dedicated, and results-driven developer, let's connect!
-                            </p>
-                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="https://www.linkedin.com/in/yoga-krisna-92312b1b9"><i
-                                        class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="https://github.com/krisnaxyoga"><i
-                                        class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Yoga Krisna 2025</div>
+            <div class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-bg"></div>
+                    <img src="assets/profile.png" alt="Yoga Krisna - Fullstack Web Developer" class="profile-image" />
+                    <div class="floating-tech">Laravel</div>
+                    <div class="floating-tech">Vue.js</div>
+                    <div class="floating-tech">React</div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section" id="certificates">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    <span class="gradient-text">Professional Certificates</span>
+                </h2>
+                <p class="section-subtitle">
+                    Certificates and achievements in web development and modern technologies
+                </p>
+            </div>
+            <div class="certificates-grid">
+                <!-- Repeat as needed -->
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/sertif1.png" alt="Laravel Web Development Certificate" class="certificate-image" />
+                    <h3 class="certificate-title">Mastering Website Development with Laravel</h3>
+                    <a href="assets/Certificate_Mahir-Membuat-Website-dengan-Laravel_I-Wayan-Yoga-Krisna.pdf"
+                        class="view-btn" target="_blank" rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/sertif2.png" alt="Algorithm Fundamentals Certificate" class="certificate-image" />
+                    <h3 class="certificate-title">Fundamentals of Algorithms</h3>
+                    <a href="assets/Certificate_Fundamental-Algoritma_I-Wayan-Yoga-Krisna.pdf" class="view-btn"
+                        target="_blank" rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/fluttersertif.png" alt="Flutter Development Certificate"
+                        class="certificate-image" />
+                    <h3 class="certificate-title">Full Stack Laravel & Flutter - E-Wallet Mobile Apps</h3>
+                    <a href="assets/full-stack-laravel-flutter-build-e-wallet-mobile-apps-i-wayan-yoga-krisna.pdf"
+                        class="view-btn" target="_blank" rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/sertifvue.png" alt="Vue.js Framework Certificate" class="certificate-image" />
+                    <h3 class="certificate-title">Vue JavaScript Framework</h3>
+                    <a href="assets/vue-javascript-framework-i-wayan-yoga-krisna.pdf" class="view-btn" target="_blank"
+                        rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/sertiflama.png" alt="Web Development Certificate" class="certificate-image" />
+                    <h3 class="certificate-title">Web Development Fundamentals</h3>
+                    <a href="assets/sertifikat_course_123_149207_270321140737.pdf" class="view-btn" target="_blank"
+                        rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/CERT-9OI9S1H4.jpg" alt="Professional Development Certificate"
+                        class="certificate-image" />
+                    <h3 class="certificate-title">Professional Development</h3>
+                    <a href="assets/CERT-9OI9S1H4.jpg" class="view-btn" target="_blank" rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+
+                <article class="glass-card certificate-card fade-in">
+                    <img src="assets/sertifgetx.png" alt="Flutter GetX Certificate" class="certificate-image" />
+                    <h3 class="certificate-title">Flutter GetX State Management</h3>
+                    <a href="assets/flutter-getx-i-wayan-yoga-krisna.pdf" class="view-btn" target="_blank"
+                        rel="noopener">
+                        <i class="bi bi-eye"></i>
+                        View Certificate
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    <span class="gradient-text">About Me</span>
+                </h2>
+            </div>
+            <div class="about-content fade-in">
+                <h3 class="about-intro">Hi, I'm Yoga Krisna</h3>
+                <p class="about-text">
+                    A passionate Fullstack Web Developer creating seamless digital experiences.
+                    With over 5 years of experience, I specialize in building scalable and user-friendly web
+                    applications.
+                    My focus is on enhancing the digital journey, especially for Indonesian web users, by leveraging
+                    cutting-edge technologies.
+                </p>
+                <p class="about-text">
+                    In this portfolio, you'll find some of my best works, including asmogpsku.com.
+                    These projects reflect my expertise in various modern technologies and my commitment to delivering
+                    high-quality solutions.
+                </p>
+
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="bi bi-palette skill-icon"></i>
+                        <span>Frontend: HTML, CSS, JavaScript, React, Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-server skill-icon"></i>
+                        <span>Backend: PHP, Laravel, Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-server skill-icon"></i>
+                        <span>Database: MySQL, PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-phone skill-icon"></i>
+                        <span>Mobile: Flutter, React Native</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-bug skill-icon"></i>
+                        <span>Testing: Unit, Integration, E2E Testing</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-git skill-icon"></i>
+                        <span>Version Control: Git, GitHub, GitLab</span>
+                    </div>
+                </div>
+
+                <p class="about-text">
+                    I'm always eager to learn, take on new challenges, and contribute to meaningful projects.
+                    I believe technology has the power to drive positive change, and I strive to be a part of that
+                    transformation.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yoga-krisna-92312b1b9" class="social-link" target="_blank"
+                        rel="noopener" aria-label="LinkedIn Profile">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/krisnaxyoga" class="social-link" target="_blank" rel="noopener"
+                        aria-label="GitHub Profile">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hai%20Yoga%20Krisna%2C%20Saya%20tertarik%20dengan%20jasa%20anda."
+        class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>&copy; 2025 Yoga Krisna. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+                Built with passion using modern web technologies
+            </p>
+        </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
     <script src="js/scripts.js"></script>
 </body>
 

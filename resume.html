@@ -2,409 +2,639 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>PORTOFOLIO YOGA KRISNA</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Resume Yoga Krisna - Fullstack Web Developer dengan pengalaman 5+ tahun dalam Laravel, Vue.js, React, Flutter, dan teknologi web modern.">
+    <meta name="keywords"
+        content="Resume, CV, Fullstack Developer, Web Developer, Laravel, Vue.js, React, Flutter, Experience">
+    <meta name="author" content="I Wayan Yoga Krisna">
+    <title>Resume - PORTOFOLIO YOGA KRISNA</title>
+
+    <link href="css/wa.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/never.css">
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">YOGA KRISNA</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page Content-->
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">YOGA KRISNA</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <div class="text-center mb-5">
-                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-            </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <!-- Experience Section-->
-                    <section>
-                        <div class="row align-items-center justify-content-between mb-4">
-                            <div class="col-lg-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                            </div>
-                            <div class="col-lg-4">
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" target="_blank" href="assets/CV_yoga_krisna.pdf">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Experience Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Feb 2023 - Feb 2025</div>
-                                            <div class="small fw-bolder">Junior Full-stack Developer</div>
-                                            <div class="small text-muted">The Mulia,Mulia Resort & Villas - Nusa Dua
-                                            </div>
-                                            <div class="small text-muted">Badung, Bali, Indonesia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            Create applications for noble privileges and assist in the development of
-                                            several applications for the needs of noble bali, maintain existing systems
-                                            and be responsible for maintaining noble privileges.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Experience Card 2-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Feb 2022 - Feb 2023</div>
-                                            <div class="small fw-bolder">Full-stack Developer</div>
-                                            <div class="small text-muted">PT Marketbiz Jendela Digital <a
-                                                    target="_blank" href="https://marketbiz.net/">(marketbiz)</a></div>
-                                            <div class="small text-muted">Jl. P.B. Sudirman Gg. I Al-Amin No.3,Dauh Puri
-                                                Klod, Kec. Denpasar Barat., Kota Denpasar, Bali 80113</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            create websites for several clients, one of which is for kutus kutus oil and
-                                            create websites for <a target="_blank"
-                                                href="https://resellr.id/">resellr.id</a> besides creating websites here
-                                            I am also responsible for developing several features and also maintaining
-                                            the resellr.id system such as integrating api biteship for shipping goods
-                                            and maintaining the marketbiz website.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Feb 2022 - Mar 2022</div>
-                                            <div class="small fw-bolder">Full-stack Developer</div>
-                                            <div class="small text-muted">PT Teknologi Pandu Wisata <a target="_blank"
-                                                    href="https://pandooin.com/id">(Pandooin)</a></div>
-                                            <div class="small text-muted">Jakarta,Jakarta Raya,Indonesia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            in charge and responsible for maintaining and developing <a target="_blank"
-                                                href="https://pandooin.com/id">pandooin.com</a> as well as migrating
-                                            designs that have been made to html with tailwind and vue.js.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Agu 2021 - Mar 2022</div>
-                                            <div class="small fw-bolder">Junior Software Engineer</div>
-                                            <div class="small text-muted">PT Ihub International Solution</div>
-                                            <div class="small text-muted">Badung, Bali, Indonesia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            responsible for the development and also repair and maintenance of <a
-                                                target="_blank"
-                                                href="https://accesswaste.com.au/">accesswaste.com.au</a> and create
-                                            several websites with wordpress to support seo.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Nov 2020 - Agu 2021</div>
-                                            <div class="small fw-bolder">Junior software Developer</div>
-                                            <div class="small text-muted">PT GLOBAL LINTAS SOLUSI</div>
-                                            <div class="small text-muted">Jl.Gunung Catur No. 1, denpasar, bali,
-                                                indonesia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            I was responsible for creating a marketplace system and also ppob as well as
-                                            fixing bugs in the village system application for several villages in the
-                                            tabanan area and also negara.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">Jun 2020 - Agu 2020</div>
-                                            <div class="small fw-bolder">Graphic Designer & IT support</div>
-                                            <div class="small text-muted">PT swadesi surya prasada</div>
-                                            <div class="small text-muted">Denpasar, Bali, Indonesia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            I am responsible for creating designs for the company's Instagram content as
-                                            well as being responsible for website maintenance.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Education Section-->
-                    <section>
-                        <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                        <!-- Education Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-secondary fw-bolder mb-2">2017 - 2020</div>
-                                            <div class="mb-2">
-                                                <div class="small fw-bolder">Politeknik Negeri Bali</div>
-                                                <div class="small text-muted">Badung, Bali, Indonesia</div>
-                                            </div>
-                                            <div class="fst-italic">
-                                                <div class="small text-muted">Amd.kom</div>
-                                                <div class="small text-muted">D3 Manajemen Informatika</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            participated in several courses that support web development, computer
-                                            networking, ui/ux design and participated in committees such as pnb
-                                            greatfest and pnbIT.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Education Card 2-->
-                        <!-- <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div> -->
-                    </section>
-                    <!-- Divider-->
-                    <div class="pb-5"></div>
-                    <!-- Skills Section-->
-                    <section>
-                        <!-- Skillset Card-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <!-- Professional skills list-->
-                                <div class="mb-5">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-tools"></i>
-                                        </div>
-                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
-                                                Skills</span></h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <!-- <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div> -->
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data
-                                                Analysis</div>
-                                        </div>
-                                        <!-- <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Analysis</div></div> -->
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database
-                                                Design</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web
-                                                Development</div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Mobile
-                                                Aplication</div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe
-                                                Software Suite</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User
-                                                Interface Design</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Languages list-->
-                                <div class="mb-0">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div
-                                            class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-code-slash"></i>
-                                        </div>
-                                        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages &
-                                                Framework</span></h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                JavaScript</div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Dart
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Laravel
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                Adonis.js</div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React.js
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Flutter
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Vue.js
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Next.js
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React
-                                                Native</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                Bulma.css</div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                Bootstrap.css</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                Tailwind.css</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+            <!-- English Content -->
+            <div class="lang-content active" id="content-en">
+                <!-- Page Header -->
+                <div class="page-header fade-in">
+                    <h1 class="page-title">Resume</h1>
+                    <a href="assets/CV_yoga_krisna.pdf" class="download-btn" target="_blank" rel="noopener">
+                        <i class="bi bi-download"></i>
+                        Download Resume
+                    </a>
                 </div>
+
+                <!-- Experience Section -->
+                <section>
+                    <div class="section-header fade-in">
+                        <div class="section-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h2 class="section-title">Experience</h2>
+                    </div>
+
+                    <!-- Experience Cards -->
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2023 - Feb 2025</div>
+                                <div class="experience-position">Junior Full-stack Developer</div>
+                                <div class="experience-company">The Mulia, Mulia Resort & Villas - Nusa Dua</div>
+                                <div class="experience-location">Badung, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Create applications for noble privileges and assist in the development of several
+                                applications for the needs of noble bali, maintain existing systems and be responsible
+                                for maintaining noble privileges.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2022 - Feb 2023</div>
+                                <div class="experience-position">Full-stack Developer</div>
+                                <div class="experience-company">PT Marketbiz Jendela Digital <a
+                                        href="https://marketbiz.net/" target="_blank" rel="noopener">(marketbiz)</a>
+                                </div>
+                                <div class="experience-location">Jl. P.B. Sudirman Gg. I Al-Amin No.3, Dauh Puri Klod,
+                                    Kec. Denpasar Barat., Kota Denpasar, Bali 80113</div>
+                            </div>
+                            <div class="experience-description">
+                                Create websites for several clients, one of which is for kutus kutus oil and create
+                                websites for <a href="https://resellr.id/" target="_blank" rel="noopener">resellr.id</a>
+                                besides creating websites here I am also responsible for developing several features and
+                                also maintaining the resellr.id system such as integrating api biteship for shipping
+                                goods and maintaining the marketbiz website.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2022 - Mar 2022</div>
+                                <div class="experience-position">Full-stack Developer</div>
+                                <div class="experience-company">PT Teknologi Pandu Wisata <a
+                                        href="https://pandooin.com/id" target="_blank" rel="noopener">(Pandooin)</a>
+                                </div>
+                                <div class="experience-location">Jakarta, Jakarta Raya, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                In charge and responsible for maintaining and developing <a
+                                    href="https://pandooin.com/id" target="_blank" rel="noopener">pandooin.com</a> as
+                                well as migrating designs that have been made to html with tailwind and vue.js.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Aug 2021 - Mar 2022</div>
+                                <div class="experience-position">Junior Software Engineer</div>
+                                <div class="experience-company">PT Ihub International Solution</div>
+                                <div class="experience-location">Badung, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Responsible for the development and also repair and maintenance of <a
+                                    href="https://accesswaste.com.au/" target="_blank"
+                                    rel="noopener">accesswaste.com.au</a> and create several websites with wordpress to
+                                support seo.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Nov 2020 - Aug 2021</div>
+                                <div class="experience-position">Junior Software Developer</div>
+                                <div class="experience-company">PT GLOBAL LINTAS SOLUSI</div>
+                                <div class="experience-location">Jl.Gunung Catur No. 1, Denpasar, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                I was responsible for creating a marketplace system and also ppob as well as fixing bugs
+                                in the village system application for several villages in the tabanan area and also
+                                negara.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Jun 2020 - Aug 2020</div>
+                                <div class="experience-position">Graphic Designer & IT Support</div>
+                                <div class="experience-company">PT Swadesi Surya Prasada</div>
+                                <div class="experience-location">Denpasar, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                I am responsible for creating designs for the company's Instagram content as well as
+                                being responsible for website maintenance.
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Education Section -->
+                <section>
+                    <div class="section-header fade-in">
+                        <div class="section-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h2 class="section-title">Education</h2>
+                    </div>
+
+                    <article class="glass-card education-card fade-in">
+                        <div class="education-header">
+                            <div class="education-meta">
+                                <div class="education-period">2017 - 2020</div>
+                                <div class="education-school">Politeknik Negeri Bali</div>
+                                <div class="education-location">Badung, Bali, Indonesia</div>
+                                <div class="education-degree">
+                                    <div>Amd.kom</div>
+                                    <div>D3 Manajemen Informatika</div>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                Participated in several courses that support web development, computer networking, ui/ux
+                                design and participated in committees such as pnb greatfest and pnbIT.
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="skills-section">
+                    <div class="glass-card skills-card fade-in">
+                        <div class="skills-category">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <h3 class="skills-title">Professional Skills</h3>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item">Data Analysis</div>
+                                <div class="skill-item">Database Design</div>
+                                <div class="skill-item">Web Development</div>
+                                <div class="skill-item">Mobile Application</div>
+                                <div class="skill-item">Adobe Software Suite</div>
+                                <div class="skill-item">User Interface Design</div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="skills-title">Languages & Framework</h3>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item">HTML</div>
+                                <div class="skill-item">CSS</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">Dart</div>
+                                <div class="skill-item">Laravel</div>
+                                <div class="skill-item">Node.js</div>
+                                <div class="skill-item">Adonis.js</div>
+                                <div class="skill-item">React.js</div>
+                                <div class="skill-item">Flutter</div>
+                                <div class="skill-item">Vue.js</div>
+                                <div class="skill-item">Next.js</div>
+                                <div class="skill-item">React Native</div>
+                                <div class="skill-item">Bulma.css</div>
+                                <div class="skill-item">Bootstrap.css</div>
+                                <div class="skill-item">Tailwind.css</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Indonesian Content -->
+            <div class="lang-content" id="content-id">
+                <!-- Page Header -->
+                <div class="page-header fade-in">
+                    <h1 class="page-title">Resume</h1>
+                    <a href="assets/CV_yoga_krisna.pdf" class="download-btn" target="_blank" rel="noopener">
+                        <i class="bi bi-download"></i>
+                        Unduh Resume
+                    </a>
+                </div>
+
+                <!-- Experience Section -->
+                <section>
+                    <div class="section-header fade-in">
+                        <div class="section-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h2 class="section-title">Pengalaman Kerja</h2>
+                    </div>
+
+                    <!-- Experience Cards -->
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2023 - Feb 2025</div>
+                                <div class="experience-position">Junior Full-stack Developer</div>
+                                <div class="experience-company">The Mulia, Mulia Resort & Villas - Nusa Dua</div>
+                                <div class="experience-location">Badung, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Membuat aplikasi untuk mulia privileges dan membantu dalam pengembangan beberapa
+                                aplikasi untuk kebutuhan mulia bali, memelihara sistem yang ada dan bertanggung jawab
+                                untuk memelihara mulia privileges.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2022 - Feb 2023</div>
+                                <div class="experience-position">Full-stack Developer</div>
+                                <div class="experience-company">PT Marketbiz Jendela Digital <a
+                                        href="https://marketbiz.net/" target="_blank" rel="noopener">(marketbiz)</a>
+                                </div>
+                                <div class="experience-location">Jl. P.B. Sudirman Gg. I Al-Amin No.3, Dauh Puri Klod,
+                                    Kec. Denpasar Barat., Kota Denpasar, Bali 80113</div>
+                            </div>
+                            <div class="experience-description">
+                                Membuat website untuk beberapa klien, salah satunya untuk minyak kutus kutus dan membuat
+                                website untuk <a href="https://resellr.id/" target="_blank"
+                                    rel="noopener">resellr.id</a> selain membuat website disini saya juga bertanggung
+                                jawab untuk mengembangkan beberapa fitur dan juga memelihara sistem resellr.id seperti
+                                mengintegrasikan api biteship untuk pengiriman barang dan memelihara website marketbiz.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Feb 2022 - Mar 2022</div>
+                                <div class="experience-position">Full-stack Developer</div>
+                                <div class="experience-company">PT Teknologi Pandu Wisata <a
+                                        href="https://pandooin.com/id" target="_blank" rel="noopener">(Pandooin)</a>
+                                </div>
+                                <div class="experience-location">Jakarta, Jakarta Raya, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Bertugas dan bertanggung jawab untuk memelihara dan mengembangkan <a
+                                    href="https://pandooin.com/id" target="_blank" rel="noopener">pandooin.com</a> serta
+                                melakukan migrasi desain yang telah dibuat ke html dengan tailwind dan vue.js.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Agu 2021 - Mar 2022</div>
+                                <div class="experience-position">Junior Software Engineer</div>
+                                <div class="experience-company">PT Ihub International Solution</div>
+                                <div class="experience-location">Badung, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Bertanggung jawab untuk pengembangan dan juga perbaikan serta pemeliharaan <a
+                                    href="https://accesswaste.com.au/" target="_blank"
+                                    rel="noopener">accesswaste.com.au</a> dan membuat beberapa website dengan wordpress
+                                untuk mendukung seo.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Nov 2020 - Agu 2021</div>
+                                <div class="experience-position">Junior Software Developer</div>
+                                <div class="experience-company">PT GLOBAL LINTAS SOLUSI</div>
+                                <div class="experience-location">Jl.Gunung Catur No. 1, Denpasar, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Saya bertanggung jawab untuk membuat sistem marketplace dan juga ppob serta memperbaiki
+                                bug pada aplikasi sistem desa untuk beberapa desa di daerah tabanan dan juga negara.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card experience-card fade-in">
+                        <div class="experience-header">
+                            <div class="experience-meta">
+                                <div class="experience-period">Jun 2020 - Agu 2020</div>
+                                <div class="experience-position">Graphic Designer & IT Support</div>
+                                <div class="experience-company">PT Swadesi Surya Prasada</div>
+                                <div class="experience-location">Denpasar, Bali, Indonesia</div>
+                            </div>
+                            <div class="experience-description">
+                                Saya bertanggung jawab untuk membuat desain untuk konten Instagram perusahaan serta
+                                bertanggung jawab untuk pemeliharaan website.
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Education Section -->
+                <section>
+                    <div class="section-header fade-in">
+                        <div class="section-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h2 class="section-title">Pendidikan</h2>
+                    </div>
+
+                    <article class="glass-card education-card fade-in">
+                        <div class="education-header">
+                            <div class="education-meta">
+                                <div class="education-period">2017 - 2020</div>
+                                <div class="education-school">Politeknik Negeri Bali</div>
+                                <div class="education-location">Badung, Bali, Indonesia</div>
+                                <div class="education-degree">
+                                    <div>Amd.kom</div>
+                                    <div>D3 Manajemen Informatika</div>
+                                </div>
+                            </div>
+                            <div class="experience-description">
+                                Mengikuti beberapa mata kuliah yang mendukung pengembangan web, jaringan komputer,
+                                desain ui/ux dan berpartisipasi dalam kepanitiaan seperti pnb greatfest dan pnbIT.
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="skills-section">
+                    <div class="glass-card skills-card fade-in">
+                        <div class="skills-category">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <h3 class="skills-title">Keahlian Profesional</h3>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item">Analisis Data</div>
+                                <div class="skill-item">Desain Database</div>
+                                <div class="skill-item">Pengembangan Web</div>
+                                <div class="skill-item">Aplikasi Mobile</div>
+                                <div class="skill-item">Adobe Software Suite</div>
+                                <div class="skill-item">Desain User Interface</div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="skills-title">Bahasa Pemrograman & Framework</h3>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-item">HTML</div>
+                                <div class="skill-item">CSS</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">Dart</div>
+                                <div class="skill-item">Laravel</div>
+                                <div class="skill-item">Node.js</div>
+                                <div class="skill-item">Adonis.js</div>
+                                <div class="skill-item">React.js</div>
+                                <div class="skill-item">Flutter</div>
+                                <div class="skill-item">Vue.js</div>
+                                <div class="skill-item">Next.js</div>
+                                <div class="skill-item">React Native</div>
+                                <div class="skill-item">Bulma.css</div>
+                                <div class="skill-item">Bootstrap.css</div>
+                                <div class="skill-item">Tailwind.css</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; Your Website 2023</div>
-                </div>
-
-            </div>
+    <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hai%20Yoga%20Krisna%2C%20Saya%20tertarik%20dengan%20jasa%20anda."
+        class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yoga Krisna. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+                Passionate about creating digital experiences
+            </p>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', function () {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hidden');
+            }, 1000);
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('bi-list');
+            icon.classList.toggle('bi-x');
+        });
+
+        // Language switching
+        function switchLanguage(lang) {
+            const enContent = document.getElementById('content-en');
+            const idContent = document.getElementById('content-id');
+            const enBtn = document.getElementById('btn-en');
+            const idBtn = document.getElementById('btn-id');
+
+            if (lang === 'en') {
+                enContent.classList.add('active');
+                idContent.classList.remove('active');
+                enBtn.classList.add('active');
+                idBtn.classList.remove('active');
+            } else {
+                idContent.classList.add('active');
+                enContent.classList.remove('active');
+                idBtn.classList.add('active');
+                enBtn.classList.remove('active');
+            }
+
+            // Re-trigger animations for newly visible content
+            setTimeout(() => {
+                const activeContent = document.querySelector('.lang-content.active');
+                const fadeElements = activeContent.querySelectorAll('.fade-in');
+                fadeElements.forEach(el => {
+                    el.classList.remove('visible');
+                    setTimeout(() => {
+                        if (isElementInViewport(el)) {
+                            el.classList.add('visible');
+                        }
+                    }, 100);
+                });
+            }, 100);
+        }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Helper function to check if element is in viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Initialize observers
+        function initializeObservers() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Initialize on load
+        initializeObservers();
+
+        // Enhanced hover effects
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add stagger animation to experience cards
+        const experienceCards = document.querySelectorAll('.experience-card');
+        experienceCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Add stagger animation to skill items
+        const skillItems = document.querySelectorAll('.skill-item');
+        skillItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.05}s`;
+        });
+
+        // Parallax effect for background
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.bg-animated');
+            const speed = 0.5;
+
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * speed}px)`;
+            }
+        });
+
+        // Add typing effect to section titles
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effects
+        setTimeout(() => {
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach((title, index) => {
+                setTimeout(() => {
+                    const originalText = title.textContent;
+                    if (isElementInViewport(title)) {
+                        typeWriter(title, originalText, 50);
+                    }
+                }, index * 500);
+            });
+        }, 2000);
+    </script>
 </body>
 
 </html>
