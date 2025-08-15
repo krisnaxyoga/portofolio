@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yogakrisna.dev/sitemap.xml
+
+# Priority crawling
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow access to sensitive files
+Disallow: /assets/CV_yoga_krisna.pdf
+Disallow: *.pdf$
