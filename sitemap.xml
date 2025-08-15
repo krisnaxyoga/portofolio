@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://yogakrisna.dev/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://yogakrisna.dev/assets/profile.png</image:loc>
+            <image:title>Yoga Krisna - Fullstack Web Developer</image:title>
+            <image:caption>Professional photo of Yoga Krisna, expert fullstack web developer from Bali, Indonesia</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Projects Page -->
+    <url>
+        <loc>https://yogakrisna.dev/projects.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://yogakrisna.dev/assets/fluttermockup.png</image:loc>
+            <image:title>E-Wallet Mobile App Project</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://yogakrisna.dev/assets/asmo.png</image:loc>
+            <image:title>AsmoGPSKU Web Application</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://yogakrisna.dev/contact.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Resume Page -->
+    <url>
+        <loc>https://yogakrisna.dev/resume.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Project Detail Pages -->
+    <url>
+        <loc>https://yogakrisna.dev/melanjo.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://yogakrisna.dev/assets/tokoonline/admin.png</image:loc>
+            <image:title>Melanjo E-commerce Admin Panel</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://yogakrisna.dev/muliaprivileges.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://yogakrisna.dev/assets/muliapr.png</image:loc>
+            <image:title>Mulia Privilege CRM System</image:title>
+        </image:image>
+    </url>
+    
+</urlset>
