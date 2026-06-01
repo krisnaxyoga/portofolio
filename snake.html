@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Snake</title>
+    <meta name="theme-color" content="#1e40af" />
+    <title>Snake Game - Yoga Krisna Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Professional stylesheet -->
+    <link href="css/professional.css" rel="stylesheet" />
+
+    <!-- Game-specific styles (scoped) -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
+        .game-shell {
             background: linear-gradient(135deg, #1a1a2e, #16213e);
-            min-height: 100vh;
+            padding: var(--p-2xl) var(--p-lg);
+            min-height: 60vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 20px;
+            align-items: flex-start;
             color: white;
+            position: relative;
         }
-        
-        .game-container {
+
+        .game-shell .game-container {
             max-width: 600px;
             width: 100%;
             background: rgba(0, 0, 30, 0.8);
@@ -31,55 +44,59 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             border: 2px solid #4a4a8a;
         }
-        
-        .game-header {
+
+        .game-shell .game-header {
             padding: 20px;
             background: rgba(20, 20, 40, 0.9);
             text-align: center;
             border-bottom: 2px solid #4a4a8a;
         }
-        
-        h1 {
-            font-size: 2.5rem;
+
+        .game-shell .game-header h1 {
+            font-size: 2.25rem;
             margin-bottom: 10px;
             background: linear-gradient(to right, #4dccbd, #3bb4e6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: transparent;
             text-shadow: 0 0 10px rgba(77, 204, 189, 0.3);
+            font-family: var(--p-font-display);
+            font-weight: 700;
+            letter-spacing: -0.02em;
         }
-        
-        .stats {
+
+        .game-shell .stats {
             display: flex;
             justify-content: space-around;
             margin-top: 15px;
         }
-        
-        .stat-box {
+
+        .game-shell .stat-box {
             background: rgba(30, 30, 60, 0.5);
             padding: 10px 20px;
             border-radius: 10px;
             min-width: 120px;
         }
-        
-        .stat-label {
+
+        .game-shell .stat-label {
             font-size: 0.9rem;
             color: #aaa;
             margin-bottom: 5px;
         }
-        
-        .stat-value {
+
+        .game-shell .stat-value {
             font-size: 1.8rem;
             font-weight: bold;
             color: #4dccbd;
         }
-        
-        .game-board-container {
+
+        .game-shell .game-board-container {
             padding: 20px;
             display: flex;
             justify-content: center;
         }
-        
-        #game-board {
+
+        .game-shell #game-board {
             display: grid;
             grid-template-columns: repeat(20, 20px);
             grid-template-rows: repeat(20, 20px);
@@ -89,89 +106,88 @@
             border-radius: 5px;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        
-        .cell {
+
+        .game-shell .cell {
             width: 20px;
             height: 20px;
             border-radius: 3px;
             background-color: rgba(30, 30, 60, 0.3);
         }
-        
-        .snake {
+
+        .game-shell .snake {
             background: linear-gradient(135deg, #4dccbd, #3bb4e6);
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 0 5px rgba(77, 204, 189, 0.5);
         }
-        
-        .snake-head {
+
+        .game-shell .snake-head {
             background: linear-gradient(135deg, #3bb4e6, #4dccbd);
             border: 1px solid rgba(255, 255, 255, 0.5);
             box-shadow: 0 0 10px rgba(59, 180, 230, 0.7);
         }
-        
-        .food {
+
+        .game-shell .food {
             background: linear-gradient(135deg, #ff416c, #ff4b2b);
             border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 0 10px rgba(255, 75, 43, 0.5);
-            animation: pulse 1s infinite alternate;
+            animation: gamepulse 1s infinite alternate;
         }
-        
-        @keyframes pulse {
+
+        @keyframes gamepulse {
             from { transform: scale(0.8); }
             to { transform: scale(1.1); }
         }
-        
-        .controls {
+
+        .game-shell .controls {
             padding: 20px;
             text-align: center;
             background: rgba(20, 20, 40, 0.9);
             border-top: 2px solid #4a4a8a;
         }
-        
-        .btn {
+
+        .game-shell .game-btn {
             background: linear-gradient(to right, #ff416c, #ff4b2b);
             color: white;
             border: none;
-            padding: 12px 30px;
-            font-size: 1.1rem;
+            padding: 10px 24px;
+            font-size: 0.95rem;
             font-weight: bold;
             border-radius: 50px;
             cursor: pointer;
-            margin: 0 10px;
+            margin: 4px;
             transition: all 0.3s;
             box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+            font-family: var(--p-font);
         }
-        
-        .btn:hover {
+
+        .game-shell .game-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
         }
-        
-        .btn:active {
-            transform: translateY(0);
-        }
-        
-        .instructions {
+
+        .game-shell .instructions {
             margin-top: 20px;
             padding: 15px;
             background: rgba(30, 30, 60, 0.5);
             border-radius: 10px;
         }
-        
-        .instructions h3 {
+
+        .game-shell .instructions h3 {
             margin-bottom: 10px;
             color: #ffd700;
+            font-family: var(--p-font-display);
+            font-size: 1.1rem;
         }
-        
-        .instructions p {
+
+        .game-shell .instructions p {
             font-size: 0.9rem;
             color: #ccc;
             line-height: 1.5;
         }
-        
-        #game-over {
-            position: absolute;
+
+        .game-shell #game-over {
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -180,97 +196,169 @@
             border-radius: 20px;
             text-align: center;
             display: none;
-            z-index: 10;
+            z-index: 9500;
             border: 3px solid #ff416c;
             box-shadow: 0 0 30px rgba(255, 65, 108, 0.7);
+            color: white;
         }
-        
-        #game-over h2 {
-            font-size: 3rem;
+
+        .game-shell #game-over h2 {
+            font-size: 2.5rem;
             color: #ff416c;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+            font-family: var(--p-font-display);
         }
-        
-        #final-score {
+
+        .game-shell #final-score {
             font-size: 2.5rem;
             color: #4dccbd;
             margin: 20px 0;
             display: block;
+            font-weight: bold;
         }
-        
+
         @media (max-width: 600px) {
-            #game-board {
+            .game-shell #game-board {
                 grid-template-columns: repeat(20, 15px);
                 grid-template-rows: repeat(20, 15px);
             }
-            
-            .cell {
-                width: 15px;
-                height: 15px;
-            }
-            
-            .stats {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-            
-            .stat-box {
-                width: 100%;
-                max-width: 200px;
-            }
+            .game-shell .cell { width: 15px; height: 15px; }
+            .game-shell .stats { flex-direction: column; align-items: center; gap: 10px; }
+            .game-shell .stat-box { width: 100%; max-width: 200px; }
         }
     </style>
 </head>
 <body>
-    <div class="game-container">
-        <div class="game-header">
-            <h1>GAME SNAKE</h1>
-            <div class="stats">
-                <div class="stat-box">
-                    <div class="stat-label">SCORE</div>
-                    <div id="score" class="stat-value">0</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">HIGH SCORE</div>
-                    <div id="high-score" class="stat-value">0</div>
-                </div>
-            </div>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <span><span class="status-dot"></span>Available for remote work &amp; freelance projects</span>
+            <a href="contact.html">Hire me &rarr;</a>
         </div>
-        
-        <div class="game-board-container">
-            <div id="game-board"></div>
-        </div>
-        
-        <div class="controls">
-            <button id="start-btn" class="btn">START GAME</button>
-            <button id="pause-btn" class="btn">PAUSE</button>
-            <button id="reset-btn" class="btn">RESET</button>
-            
-            <div class="instructions">
-                <h3>CONTROLS</h3>
-                <p>Gunakan tombol panah (↑, →, ↓, ←) untuk menggerakkan ular. 
-                Makan makanan berwarna merah untuk menambah skor dan panjang ular.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div id="game-over">
-        <h2>GAME OVER!</h2>
-        <span>Skor Akhir:</span>
-        <span id="final-score">0</span>
-        <button id="restart-btn" class="btn">MAIN LAGI</button>
     </div>
 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Yoga Krisna</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta">Hire Me</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <a href="projects.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+                Back to Projects
+            </a>
+            <div class="page-header fade-in">
+                <span class="section-eyebrow">Mini Project &middot; Game</span>
+                <h1 class="page-title">Snake Game</h1>
+                <p class="page-subtitle">
+                    A classic Snake game built with vanilla JavaScript &mdash; demo of DOM manipulation,
+                    game loops, and state management.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Shell -->
+    <div class="game-shell">
+        <div class="game-container">
+            <div class="game-header">
+                <h1>SNAKE</h1>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-label">SCORE</div>
+                        <div id="score" class="stat-value">0</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">HIGH SCORE</div>
+                        <div id="high-score" class="stat-value">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-board-container">
+                <div id="game-board"></div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="game-btn">START GAME</button>
+                <button id="pause-btn" class="game-btn">PAUSE</button>
+                <button id="reset-btn" class="game-btn">RESET</button>
+
+                <div class="instructions">
+                    <h3>CONTROLS</h3>
+                    <p>Gunakan tombol panah (&uarr;, &rarr;, &darr;, &larr;) untuk menggerakkan ular.
+                    Makan makanan berwarna merah untuk menambah skor dan panjang ular.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over">
+            <h2>GAME OVER!</h2>
+            <span>Skor Akhir:</span>
+            <span id="final-score">0</span>
+            <button id="restart-btn" class="game-btn">MAIN LAGI</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p>&copy; 2025 Yoga Krisna. All rights reserved. &middot; Built with care in Bali, Indonesia.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Konfigurasi game
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        mobileToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('bi-list');
+            icon.classList.toggle('bi-x');
+        });
+
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        // Fade-in
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Game logic
         const GRID_SIZE = 20;
-        const CELL_SIZE = 20;
         const INITIAL_SPEED = 150;
         const SPEED_INCREMENT = 2;
-        
-        // Variabel game state
+
         let snake = [];
         let food = {};
         let direction = 'RIGHT';
@@ -281,8 +369,7 @@
         let gameActive = false;
         let gamePaused = false;
         let speed = INITIAL_SPEED;
-        
-        // Elemen DOM
+
         const gameBoard = document.getElementById('game-board');
         const scoreDisplay = document.getElementById('score');
         const highScoreDisplay = document.getElementById('high-score');
@@ -292,8 +379,7 @@
         const restartBtn = document.getElementById('restart-btn');
         const gameOverDiv = document.getElementById('game-over');
         const finalScoreDisplay = document.getElementById('final-score');
-        
-        // Inisialisasi papan permainan
+
         function initBoard() {
             gameBoard.innerHTML = '';
             for (let row = 0; row < GRID_SIZE; row++) {
@@ -306,183 +392,94 @@
                 }
             }
         }
-        
-        // Inisialisasi game
+
         function initGame() {
-            // Reset snake
-            snake = [
-                { row: 10, col: 10 },  // Head
-                { row: 10, col: 9 },
-                { row: 10, col: 8 }   // Tail
-            ];
-            
-            // Generate makanan
+            snake = [{ row: 10, col: 10 }, { row: 10, col: 9 }, { row: 10, col: 8 }];
             generateFood();
-            
-            // Reset state
             direction = 'RIGHT';
             nextDirection = 'RIGHT';
             score = 0;
             speed = INITIAL_SPEED;
-            
-            // Update tampilan
             updateScore();
             draw();
         }
-        
-        // Gambar semua elemen di papan
+
         function draw() {
-            // Reset semua sel
-            document.querySelectorAll('.cell').forEach(cell => {
-                cell.className = 'cell';
-            });
-            
-            // Gambar snake
+            document.querySelectorAll('.cell').forEach(cell => { cell.className = 'cell'; });
             snake.forEach((segment, index) => {
                 const cell = document.querySelector(`.cell[data-row="${segment.row}"][data-col="${segment.col}"]`);
-                if (cell) {
-                    if (index === 0) {
-                        cell.classList.add('snake-head');
-                    } else {
-                        cell.classList.add('snake');
-                    }
-                }
+                if (cell) cell.classList.add(index === 0 ? 'snake-head' : 'snake');
             });
-            
-            // Gambar makanan
             const foodCell = document.querySelector(`.cell[data-row="${food.row}"][data-col="${food.col}"]`);
-            if (foodCell) {
-                foodCell.classList.add('food');
-            }
+            if (foodCell) foodCell.classList.add('food');
         }
-        
-        // Gerakkan snake
+
         function moveSnake() {
             if (!gameActive || gamePaused) return;
-            
-            // Update arah
             direction = nextDirection;
-            
-            // Salin kepala saat ini
             const head = { ...snake[0] };
-            
-            // Update posisi kepala berdasarkan arah
             switch (direction) {
-                case 'UP':
-                    head.row--;
-                    break;
-                case 'DOWN':
-                    head.row++;
-                    break;
-                case 'LEFT':
-                    head.col--;
-                    break;
-                case 'RIGHT':
-                    head.col++;
-                    break;
+                case 'UP': head.row--; break;
+                case 'DOWN': head.row++; break;
+                case 'LEFT': head.col--; break;
+                case 'RIGHT': head.col++; break;
             }
-            
-            // Cek tabrakan dengan dinding
-            if (
-                head.row < 0 || 
-                head.row >= GRID_SIZE || 
-                head.col < 0 || 
-                head.col >= GRID_SIZE
-            ) {
-                gameOver();
-                return;
+            if (head.row < 0 || head.row >= GRID_SIZE || head.col < 0 || head.col >= GRID_SIZE) {
+                gameOver(); return;
             }
-            
-            // Cek tabrakan dengan tubuh sendiri
             for (let i = 0; i < snake.length; i++) {
-                if (snake[i].row === head.row && snake[i].col === head.col) {
-                    gameOver();
-                    return;
-                }
+                if (snake[i].row === head.row && snake[i].col === head.col) { gameOver(); return; }
             }
-            
-            // Tambahkan kepala baru
             snake.unshift(head);
-            
-            // Cek apakah ular memakan makanan
             if (head.row === food.row && head.col === food.col) {
-                // Tambahkan skor
                 score += 10;
                 updateScore();
-                
-                // Percepat permainan
                 if (speed > 50) {
                     speed -= SPEED_INCREMENT;
                     clearInterval(gameInterval);
                     gameInterval = setInterval(moveSnake, speed);
                 }
-                
-                // Generate makanan baru
                 generateFood();
             } else {
-                // Hapus ekor jika tidak makan
                 snake.pop();
             }
-            
-            // Gambar ulang papan
             draw();
         }
-        
-        // Generate makanan di posisi acak
+
         function generateFood() {
-            let newFood;
-            let onSnake;
-            
+            let newFood, onSnake;
             do {
                 onSnake = false;
-                newFood = {
-                    row: Math.floor(Math.random() * GRID_SIZE),
-                    col: Math.floor(Math.random() * GRID_SIZE)
-                };
-                
-                // Pastikan makanan tidak muncul di atas ular
+                newFood = { row: Math.floor(Math.random() * GRID_SIZE), col: Math.floor(Math.random() * GRID_SIZE) };
                 for (const segment of snake) {
-                    if (segment.row === newFood.row && segment.col === newFood.col) {
-                        onSnake = true;
-                        break;
-                    }
+                    if (segment.row === newFood.row && segment.col === newFood.col) { onSnake = true; break; }
                 }
             } while (onSnake);
-            
             food = newFood;
         }
-        
-        // Update skor
+
         function updateScore() {
             scoreDisplay.textContent = score;
             highScoreDisplay.textContent = highScore;
         }
-        
-        // Mulai permainan
+
         function startGame() {
             if (gameActive) return;
-            
             gameActive = true;
             gamePaused = false;
             pauseBtn.textContent = 'PAUSE';
             gameOverDiv.style.display = 'none';
-            
             initGame();
-            
-            // Mulai interval permainan
             clearInterval(gameInterval);
             gameInterval = setInterval(moveSnake, speed);
         }
-        
-        // Jeda permainan
+
         function togglePause() {
             if (!gameActive) return;
-            
             gamePaused = !gamePaused;
             pauseBtn.textContent = gamePaused ? 'RESUME' : 'PAUSE';
         }
-        
-        // Reset permainan
+
         function resetGame() {
             gameActive = false;
             gamePaused = false;
@@ -493,50 +490,34 @@
             score = 0;
             updateScore();
         }
-        
-        // Game over
+
         function gameOver() {
             gameActive = false;
             clearInterval(gameInterval);
-            
-            // Update high score
             if (score > highScore) {
                 highScore = score;
                 localStorage.setItem('snakeHighScore', highScore);
                 updateScore();
             }
-            
-            // Tampilkan layar game over
             finalScoreDisplay.textContent = score;
             gameOverDiv.style.display = 'block';
         }
-        
-        // Event listeners
+
         document.addEventListener('keydown', (e) => {
             if (!gameActive || gamePaused) return;
-            
             switch (e.key) {
-                case 'ArrowUp':
-                    if (direction !== 'DOWN') nextDirection = 'UP';
-                    break;
-                case 'ArrowDown':
-                    if (direction !== 'UP') nextDirection = 'DOWN';
-                    break;
-                case 'ArrowLeft':
-                    if (direction !== 'RIGHT') nextDirection = 'LEFT';
-                    break;
-                case 'ArrowRight':
-                    if (direction !== 'LEFT') nextDirection = 'RIGHT';
-                    break;
+                case 'ArrowUp': if (direction !== 'DOWN') nextDirection = 'UP'; break;
+                case 'ArrowDown': if (direction !== 'UP') nextDirection = 'DOWN'; break;
+                case 'ArrowLeft': if (direction !== 'RIGHT') nextDirection = 'LEFT'; break;
+                case 'ArrowRight': if (direction !== 'LEFT') nextDirection = 'RIGHT'; break;
             }
         });
-        
+
         startBtn.addEventListener('click', startGame);
         pauseBtn.addEventListener('click', togglePause);
         resetBtn.addEventListener('click', resetGame);
         restartBtn.addEventListener('click', startGame);
-        
-        // Inisialisasi
+
         initBoard();
         updateScore();
     </script>

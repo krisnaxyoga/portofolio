@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Yoga Krisna - Expert Fullstack Web Developer from Bali, Indonesia. Available for Laravel, Vue.js, React, and Flutter development projects. Get free consultation for your web and mobile app development needs.">
-    <meta name="keywords" content="Contact Yoga Krisna, Hire Web Developer, Fullstack Developer Bali, Laravel Developer for Hire, Vue.js Developer, React Developer, Flutter Developer, Web Development Services, Mobile App Development, Bali Indonesia Developer">
+    <meta name="description" content="Contact Yoga Krisna - Fullstack Web Developer from Bali, Indonesia. Available for Laravel, Vue.js, React, and Flutter projects. Free consultation for your web and mobile app needs.">
+    <meta name="keywords" content="Contact Yoga Krisna, Hire Web Developer, Fullstack Developer Bali, Laravel Developer for Hire, Vue.js Developer, React Developer, Flutter Developer">
     <meta name="author" content="I Wayan Yoga Krisna">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e40af" />
     <link rel="canonical" href="https://yogakrisna.dev/contact.html">
-    <title>Contact Yoga Krisna - Hire Expert Fullstack Web Developer | Bali, Indonesia</title>
+    <title>Contact Yoga Krisna - Hire Fullstack Web Developer | Bali, Indonesia</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,155 +21,207 @@
 
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="css/contact-brutalism.css" rel="stylesheet" />
 
-    <link href="css/wa.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Stylesheets -->
+    <link href="css/professional.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="contact-page">
     <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="spinner"></div>
-        <div class="loading-text">
-            LOADING<span class="loading-dots"></span>
+        <div class="loading-text">Loading</div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <span><span class="status-dot"></span>Available for remote work &amp; freelance projects</span>
+            <a href="#contact-form">Send a message &rarr;</a>
         </div>
     </div>
 
-    <!-- Animated Background -->
-    <div class="bg-animated"></div>
-
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">YOGA KRISNA</a>
+            <a href="index.html" class="logo">Yoga Krisna</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="#contact-form" class="nav-link nav-cta">Hire Me</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobile-toggle">
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
                 <i class="bi bi-list"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
-            <section class="contact-section">
-                <div class="contact-container">
-                    <!-- Contact Header -->
-                    <div class="contact-header fade-in">
-                        <div class="contact-icon">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <h1 class="contact-title">GET IN TOUCH</h1>
-                        <p class="contact-subtitle">LET'S BUILD SOMETHING EPIC TOGETHER!</p>
-                    </div>
+            <div class="page-header fade-in">
+                <span class="section-eyebrow">Get in touch</span>
+                <h1 class="page-title">Let's talk about your project</h1>
+                <p class="page-subtitle">
+                    Tell me a bit about what you're building or the role you're hiring for &mdash;
+                    I usually reply within 24 hours.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                    <!-- Contact Form -->
-                    <div class="contact-form fade-in">
-                        <!-- Success Message -->
-                        <div class="success-message" id="successMessage">
-                            <i class="bi bi-check-circle me-2"></i>
-                            Message sent successfully! I'll get back to you soon.
-                        </div>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <aside class="contact-info-card fade-in">
+                    <h2 style="font-size: 1.25rem; margin-bottom: var(--p-md);">Contact details</h2>
 
-                        <!-- Error Message -->
-                        <div class="error-message" id="errorMessage">
-                            <i class="bi bi-exclamation-triangle me-2"></i>
-                            Error sending message! Please try again.
-                        </div>
-
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label class="form-label" for="name">FULL NAME</label>
-                                <input type="text" id="name" class="form-input" placeholder="ENTER YOUR FULL NAME"
-                                    required>
+                    <div class="info-block">
+                        <div class="info-icon-wrap"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <div class="info-block-label">Email</div>
+                            <div class="info-block-value">
+                                <a href="mailto:krisna.soms@gmail.com">krisna.soms@gmail.com</a>
                             </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="email">EMAIL ADDRESS</label>
-                                <input type="email" id="email" class="form-input" placeholder="YOUR.EMAIL@EXAMPLE.COM"
-                                    required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" class="form-input" placeholder="+62 812 3456 7890"
-                                    required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="message">MESSAGE</label>
-                                <textarea id="message" class="form-input form-textarea"
-                                    placeholder="TELL ME ABOUT YOUR PROJECT OR HOW I CAN HELP YOU..."
-                                    required></textarea>
-                            </div>
-
-                            <button type="submit" class="submit-btn" id="submitButton">
-                                <i class="bi bi-send me-2"></i>
-                                SEND MESSAGE
-                            </button>
-                        </form>
-                    </div>
-
-                    <!-- Contact Information -->
-                    <div class="contact-info fade-in">
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="bi bi-envelope"></i>
-                            </div>
-                            <h3 class="info-title">EMAIL</h3>
-                            <p class="info-text">
-                                <a href="mailto:krisna.soms@gmail.com" class="info-link">krisna.soms@gmail.com</a>
-                            </p>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="bi bi-whatsapp"></i>
-                            </div>
-                            <h3 class="info-title">WHATSAPP</h3>
-                            <p class="info-text">
-                                <a href="https://wa.me/6285121102295" class="info-link" target="_blank" rel="noopener">
-                                    +62 851 2110 2295
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="bi bi-geo-alt"></i>
-                            </div>
-                            <h3 class="info-title">LOCATION</h3>
-                            <p class="info-text">BALI, INDONESIA</p>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="bi bi-clock"></i>
-                            </div>
-                            <h3 class="info-title">RESPONSE TIME</h3>
-                            <p class="info-text">WITHIN 24 HOURS</p>
                         </div>
                     </div>
-                </div>
-            </section>
+
+                    <div class="info-block">
+                        <div class="info-icon-wrap"><i class="bi bi-whatsapp"></i></div>
+                        <div>
+                            <div class="info-block-label">WhatsApp</div>
+                            <div class="info-block-value">
+                                <a href="https://wa.me/6285121102295" target="_blank" rel="noopener">+62 851 2110 2295</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon-wrap"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <div class="info-block-label">Location</div>
+                            <div class="info-block-value">Bali, Indonesia &middot; GMT+8</div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon-wrap"><i class="bi bi-clock"></i></div>
+                        <div>
+                            <div class="info-block-label">Response time</div>
+                            <div class="info-block-value">Within 24 hours</div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <div class="info-icon-wrap"><i class="bi bi-check2-circle"></i></div>
+                        <div>
+                            <div class="info-block-label">Availability</div>
+                            <div class="info-block-value">Open for freelance, contract &amp; full-time remote</div>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: var(--p-lg);">
+                        <a href="https://www.linkedin.com/in/yoga-krisna-92312b1b9" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/krisnaxyoga" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://wa.me/6285121102295" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- Form -->
+                <section class="contact-form-page fade-in" id="contact-form">
+                    <h2>Send a quick message</h2>
+                    <p class="form-intro">
+                        Fill in the form below &mdash; you'll be redirected to WhatsApp with your message pre-filled.
+                    </p>
+
+                    <div class="alert-message alert-success" id="successMessage">
+                        <i class="bi bi-check-circle"></i>
+                        Message ready! WhatsApp should have opened in a new tab.
+                    </div>
+
+                    <div class="alert-message alert-error" id="errorMessage">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        Something went wrong. Please try again.
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+62 812 3456 7890" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="purpose">I'm reaching out about</label>
+                            <select class="form-select" id="purpose" required>
+                                <option value="">Select an option</option>
+                                <option value="Freelance project">Freelance project</option>
+                                <option value="Remote full-time role">Remote full-time role</option>
+                                <option value="Contract / hourly work">Contract / hourly work</option>
+                                <option value="Consultation">Consultation</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="Brief description, timeline, budget range (optional)" required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit" id="submitButton">
+                            <i class="bi bi-send"></i>
+                            Send Message
+                        </button>
+                        <p class="form-note">Your info stays private &mdash; used only to reply to you.</p>
+                    </form>
+                </section>
+            </div>
         </div>
     </main>
-    <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hai%20Yoga%20Krisna%2C%20Saya%20tertarik%20dengan%20jasa%20anda."
-        class="whatsapp-float" target="_blank" rel="noopener">
+
+    <!-- WhatsApp Float -->
+    <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hi%20Yoga%20Krisna%2C%20I%27d%20like%20to%20discuss%20a%20project."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <i class="bi bi-whatsapp"></i>
     </a>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 YOGA KRISNA. ALL RIGHTS RESERVED.</p>
-            <p class="footer-subtitle">
-                READY TO BRING YOUR IDEAS TO LIFE
-            </p>
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p>&copy; 2025 Yoga Krisna. All rights reserved. &middot; Built with care in Bali, Indonesia.</p>
+            </div>
         </div>
     </footer>
 
@@ -176,15 +229,12 @@
         // Loading screen
         window.addEventListener('load', function () {
             const loading = document.getElementById('loading');
-            setTimeout(() => {
-                loading.classList.add('hidden');
-            }, 1000);
+            setTimeout(() => loading.classList.add('hidden'), 800);
         });
 
         // Mobile menu toggle
         const mobileToggle = document.getElementById('mobile-toggle');
         const navMenu = document.getElementById('nav-menu');
-
         mobileToggle.addEventListener('click', function () {
             navMenu.classList.toggle('active');
             const icon = this.querySelector('i');
@@ -192,173 +242,58 @@
             icon.classList.toggle('bi-x');
         });
 
-        // Form submission with WhatsApp integration
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        // Form submission → WhatsApp
         document.getElementById('contactForm').addEventListener('submit', function (event) {
             event.preventDefault();
-
             const submitButton = document.getElementById('submitButton');
             const successMessage = document.getElementById('successMessage');
             const errorMessage = document.getElementById('errorMessage');
 
-            // Hide previous messages
             successMessage.style.display = 'none';
             errorMessage.style.display = 'none';
-
-            // Show loading state
             submitButton.classList.add('btn-loading');
             submitButton.disabled = true;
 
-            // Get form values
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const phone = document.getElementById('phone').value.trim();
+            const purpose = document.getElementById('purpose').value;
             const message = document.getElementById('message').value.trim();
 
-            // Validate form
-            if (!name || !email || !phone || !message) {
-                showError('Please fill in all fields.');
-                resetButton();
-                return;
-            }
-
-            // Validate email
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showError('Please enter a valid email address.');
-                resetButton();
-                return;
-            }
-
-            // Simulate processing delay
             setTimeout(() => {
                 try {
-                    // Create WhatsApp message
-                    const whatsappMessage = `Hi! I'm interested in your web development services:\n\n` +
-                        `📝 Name: ${name}\n` +
-                        `📧 Email: ${email}\n` +
-                        `📱 Phone: ${phone}\n` +
-                        `💬 Message: ${message}\n\n` +
-                        `Looking forward to working with you!`;
-
-                    // Create WhatsApp link
-                    const whatsappLink = `https://wa.me/6285121102295?text=${encodeURIComponent(whatsappMessage)}`;
-
-                    // Open WhatsApp
-                    window.open(whatsappLink, '_blank');
-
-                    // Show success message
-                    showSuccess();
-
-                    // Reset form
+                    const waMessage = `Hi Yoga! I'd like to get in touch.\n\n` +
+                        `Name: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Phone: ${phone}\n` +
+                        `About: ${purpose}\n` +
+                        `Message: ${message}\n\n` +
+                        `Looking forward to your reply!`;
+                    const link = `https://wa.me/6285121102295?text=${encodeURIComponent(waMessage)}`;
+                    window.open(link, '_blank');
+                    successMessage.style.display = 'flex';
                     document.getElementById('contactForm').reset();
-
-                } catch (error) {
-                    showError('Something went wrong. Please try again.');
+                    setTimeout(() => successMessage.style.display = 'none', 5000);
+                } catch (err) {
+                    errorMessage.style.display = 'flex';
+                    setTimeout(() => errorMessage.style.display = 'none', 5000);
                 }
-
-                resetButton();
-            }, 1500);
+                submitButton.classList.remove('btn-loading');
+                submitButton.disabled = false;
+            }, 600);
         });
 
-        function showSuccess() {
-            const successMessage = document.getElementById('successMessage');
-            successMessage.style.display = 'block';
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-            // Hide after 5 seconds
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-            }, 5000);
-        }
-
-        function showError(message) {
-            const errorMessage = document.getElementById('errorMessage');
-            errorMessage.innerHTML = `<i class="bi bi-exclamation-triangle me-2"></i>${message}`;
-            errorMessage.style.display = 'block';
-            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-            // Hide after 5 seconds
-            setTimeout(() => {
-                errorMessage.style.display = 'none';
-            }, 5000);
-        }
-
-        function resetButton() {
-            const submitButton = document.getElementById('submitButton');
-            submitButton.classList.remove('btn-loading');
-            submitButton.disabled = false;
-        }
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Enhanced form interactions
-        document.querySelectorAll('.form-input').forEach(input => {
-            input.addEventListener('focus', function () {
-                this.parentElement.style.transform = 'translateY(-2px)';
-            });
-
-            input.addEventListener('blur', function () {
-                this.parentElement.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add floating animation to contact icon
-        const contactIcon = document.querySelector('.contact-icon');
-        if (contactIcon) {
-            setInterval(() => {
-                contactIcon.style.transform = 'translateY(-5px)';
-                setTimeout(() => {
-                    contactIcon.style.transform = 'translateY(0)';
-                }, 1000);
-            }, 2000);
-        }
-
-        // Form validation feedback
-        document.querySelectorAll('.form-input').forEach(input => {
-            input.addEventListener('input', function () {
-                if (this.checkValidity()) {
-                    this.style.borderColor = 'rgba(17, 153, 142, 0.5)';
-                } else {
-                    this.style.borderColor = 'rgba(255, 107, 107, 0.5)';
-                }
-            });
-
-            input.addEventListener('blur', function () {
-                if (this.value === '') {
-                    this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-                }
-            });
-        });
+        // Fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 

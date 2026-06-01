@@ -1,0 +1,189 @@
+{
+  "cvFile": "assets/CV_yoga_krisna.pdf",
+  "languages": {
+    "en": {
+      "labels": {
+        "experience": "PROFESSIONAL EXPERIENCE",
+        "education": "EDUCATION",
+        "skills": "TECHNICAL SKILLS",
+        "professionalSkills": "PROFESSIONAL SKILLS",
+        "technologies": "TECHNOLOGIES & FRAMEWORKS"
+      },
+      "experience": [
+        {
+          "period": "FEB 2023 - FEB 2025",
+          "position": "JUNIOR FULLSTACK DEVELOPER",
+          "company": "The Mulia, Mulia Resort & Villas - Nusa Dua",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Created applications for Mulia Privileges loyalty system and assisted in developing multiple applications for The Mulia Bali operations. Responsible for maintaining existing systems and ensuring optimal performance of the Mulia Privileges platform serving thousands of hotel guests."
+        },
+        {
+          "period": "FEB 2022 - FEB 2023",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "PT Marketbiz Jendela Digital <a href=\"https://marketbiz.net/\" target=\"_blank\" rel=\"noopener\">(Marketbiz)</a>",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Developed websites for multiple clients including Kutus Kutus Oil and created the complete <a href=\"https://resellr.id/\" target=\"_blank\" rel=\"noopener\">resellr.id</a> platform. Responsible for feature development, system maintenance, API integrations including Biteship shipping API, and maintaining the Marketbiz corporate website."
+        },
+        {
+          "period": "FEB 2022 - MAR 2022",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "PT Teknologi Pandu Wisata <a href=\"https://pandooin.com/id\" target=\"_blank\" rel=\"noopener\">(Pandooin)</a>",
+          "location": "Jakarta, Indonesia",
+          "description": "Maintained and developed <a href=\"https://pandooin.com/id\" target=\"_blank\" rel=\"noopener\">pandooin.com</a> travel marketplace. Migrated UI designs to HTML using Tailwind CSS and Vue.js, ensuring responsive design and optimal user experience across all devices."
+        },
+        {
+          "period": "AUG 2021 - MAR 2022",
+          "position": "JUNIOR SOFTWARE ENGINEER",
+          "company": "PT Ihub International Solution",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Led development, maintenance, and optimization of <a href=\"https://accesswaste.com.au/\" target=\"_blank\" rel=\"noopener\">accesswaste.com.au</a> skipbin booking platform. Created multiple WordPress websites optimized for SEO to improve client search engine rankings and online visibility."
+        },
+        {
+          "period": "NOV 2020 - AUG 2021",
+          "position": "JUNIOR SOFTWARE DEVELOPER",
+          "company": "PT Global Lintas Solusi",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Developed marketplace systems and PPOB (Payment Point Online Bank) solutions. Fixed critical bugs in village management applications deployed across multiple villages in Tabanan and Negara regions, improving local government digital infrastructure."
+        },
+        {
+          "period": "JUN 2020 - AUG 2020",
+          "position": "GRAPHIC DESIGNER & IT SUPPORT",
+          "company": "PT Swadesi Surya Prasada",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Created engaging Instagram content designs for company social media marketing campaigns. Provided comprehensive IT support and website maintenance services, ensuring optimal digital presence and technical operations."
+        }
+      ],
+      "education": [
+        {
+          "period": "2017 - 2020",
+          "degree": "DIPLOMA IN INFORMATION MANAGEMENT (D3)",
+          "school": "Politeknik Negeri Bali",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Completed comprehensive coursework in web development, computer networking, and UI/UX design. Actively participated in organizing committees for PNB GreatFest and PNB IT events, developing leadership and project management skills."
+        }
+      ],
+      "professionalSkills": [
+        "DATA ANALYSIS",
+        "DATABASE DESIGN",
+        "WEB DEVELOPMENT",
+        "MOBILE APPS",
+        "UI/UX DESIGN",
+        "API INTEGRATION",
+        "SYSTEM ARCHITECTURE",
+        "PROJECT MANAGEMENT"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JAVASCRIPT",
+        "PHP",
+        "DART",
+        "LARAVEL",
+        "VUE.JS",
+        "REACT.JS",
+        "NEXT.JS",
+        "NODE.JS",
+        "EXPRESS.JS",
+        "FLUTTER",
+        "REACT NATIVE",
+        "BOOTSTRAP",
+        "TAILWIND CSS",
+        "MYSQL",
+        "POSTGRESQL",
+        "GIT"
+      ]
+    },
+    "id": {
+      "labels": {
+        "experience": "PENGALAMAN KERJA",
+        "education": "PENDIDIKAN",
+        "skills": "KEAHLIAN TEKNIS",
+        "professionalSkills": "KEAHLIAN PROFESIONAL",
+        "technologies": "TEKNOLOGI & FRAMEWORK"
+      },
+      "experience": [
+        {
+          "period": "FEB 2023 - FEB 2025",
+          "position": "JUNIOR FULLSTACK DEVELOPER",
+          "company": "The Mulia, Mulia Resort & Villas - Nusa Dua",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Membuat aplikasi untuk sistem loyalitas Mulia Privileges dan membantu mengembangkan berbagai aplikasi untuk operasional The Mulia Bali. Bertanggung jawab memelihara sistem yang ada dan memastikan performa optimal platform Mulia Privileges yang melayani ribuan tamu hotel."
+        },
+        {
+          "period": "FEB 2022 - FEB 2023",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "PT Marketbiz Jendela Digital <a href=\"https://marketbiz.net/\" target=\"_blank\" rel=\"noopener\">(Marketbiz)</a>",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Mengembangkan website untuk berbagai klien termasuk Kutus Kutus Oil dan menciptakan platform lengkap <a href=\"https://resellr.id/\" target=\"_blank\" rel=\"noopener\">resellr.id</a>. Bertanggung jawab untuk pengembangan fitur, pemeliharaan sistem, integrasi API termasuk API shipping Biteship, dan memelihara website korporat Marketbiz."
+        },
+        {
+          "period": "FEB 2022 - MAR 2022",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "PT Teknologi Pandu Wisata <a href=\"https://pandooin.com/id\" target=\"_blank\" rel=\"noopener\">(Pandooin)</a>",
+          "location": "Jakarta, Indonesia",
+          "description": "Memelihara dan mengembangkan marketplace travel <a href=\"https://pandooin.com/id\" target=\"_blank\" rel=\"noopener\">pandooin.com</a>. Melakukan migrasi desain UI ke HTML menggunakan Tailwind CSS dan Vue.js, memastikan desain responsif dan pengalaman pengguna optimal di semua perangkat."
+        },
+        {
+          "period": "AUG 2021 - MAR 2022",
+          "position": "JUNIOR SOFTWARE ENGINEER",
+          "company": "PT Ihub International Solution",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Memimpin pengembangan, pemeliharaan, dan optimisasi platform booking skipbin <a href=\"https://accesswaste.com.au/\" target=\"_blank\" rel=\"noopener\">accesswaste.com.au</a>. Membuat berbagai website WordPress yang dioptimasi untuk SEO guna meningkatkan peringkat search engine dan visibilitas online klien."
+        },
+        {
+          "period": "NOV 2020 - AUG 2021",
+          "position": "JUNIOR SOFTWARE DEVELOPER",
+          "company": "PT Global Lintas Solusi",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Mengembangkan sistem marketplace dan solusi PPOB (Payment Point Online Bank). Memperbaiki bug kritis dalam aplikasi manajemen desa yang digunakan di berbagai desa di wilayah Tabanan dan Negara, meningkatkan infrastruktur digital pemerintah daerah."
+        },
+        {
+          "period": "JUN 2020 - AUG 2020",
+          "position": "GRAPHIC DESIGNER & IT SUPPORT",
+          "company": "PT Swadesi Surya Prasada",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Menciptakan desain konten Instagram yang menarik untuk kampanye pemasaran media sosial perusahaan. Memberikan dukungan IT komprehensif dan layanan pemeliharaan website, memastikan kehadiran digital optimal dan operasional teknis yang lancar."
+        }
+      ],
+      "education": [
+        {
+          "period": "2017 - 2020",
+          "degree": "DIPLOMA MANAJEMEN INFORMATIKA (D3)",
+          "school": "Politeknik Negeri Bali",
+          "location": "Badung, Bali, Indonesia",
+          "description": "Menyelesaikan kurikulum komprehensif dalam pengembangan web, jaringan komputer, dan desain UI/UX. Aktif berpartisipasi dalam kepanitiaan acara PNB GreatFest dan PNB IT, mengembangkan kemampuan kepemimpinan dan manajemen proyek."
+        }
+      ],
+      "professionalSkills": [
+        "ANALISIS DATA",
+        "DESAIN DATABASE",
+        "PENGEMBANGAN WEB",
+        "APLIKASI MOBILE",
+        "DESAIN UI/UX",
+        "INTEGRASI API",
+        "ARSITEKTUR SISTEM",
+        "MANAJEMEN PROYEK"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JAVASCRIPT",
+        "PHP",
+        "DART",
+        "LARAVEL",
+        "VUE.JS",
+        "REACT.JS",
+        "NEXT.JS",
+        "NODE.JS",
+        "EXPRESS.JS",
+        "FLUTTER",
+        "REACT NATIVE",
+        "BOOTSTRAP",
+        "TAILWIND CSS",
+        "MYSQL",
+        "POSTGRESQL",
+        "GIT"
+      ]
+    }
+  }
+}

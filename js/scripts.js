@@ -119,7 +119,7 @@ window.addEventListener("scroll", function() {
   });
 });
 
-// Add typing effect to hero title
+// Add typing effect to hero title — only when explicitly opted in via data-typewriter
 function typeWriter(element, text, speed = 100) {
   let i = 0;
   element.innerHTML = "";
@@ -133,11 +133,10 @@ function typeWriter(element, text, speed = 100) {
   type();
 }
 
-// Initialize typing effect after page load
 setTimeout(() => {
-  const heroTitle = document.querySelector(".hero-title");
+  const heroTitle = document.querySelector(".hero-title[data-typewriter]");
   if (heroTitle) {
-    const originalText = heroTitle.innerHTML;
+    const originalText = heroTitle.textContent;
     typeWriter(heroTitle, originalText, 50);
   }
 }, 1500);

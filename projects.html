@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional web developer Yoga Krisna showcases 15+ completed projects: Custom mobile app development, e-commerce platforms, fintech solutions, game development, and enterprise web applications. Expert Laravel, Vue.js, React, Flutter developer for hire with proven track record serving clients worldwide.">
-  <meta name="keywords" content="hire web developer, mobile app developer, Laravel developer, Vue.js developer, React developer, Flutter app development, custom e-commerce development, fintech mobile apps, web application development, fullstack developer Indonesia, professional web development services, custom software development, Yoga Krisna portfolio, Bali web developer, enterprise web solutions">
+  <meta name="description" content="Yoga Krisna's portfolio &mdash; 15+ web and mobile app projects including custom mobile apps, e-commerce platforms, fintech solutions, and enterprise web applications. Built with Laravel, Vue.js, React, and Flutter.">
+  <meta name="keywords" content="hire web developer, mobile app developer, Laravel developer, Vue.js developer, React developer, Flutter app development, custom e-commerce development, fullstack developer Indonesia, Yoga Krisna portfolio, Bali web developer">
   <meta name="author" content="I Wayan Yoga Krisna">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e40af" />
   <link rel="canonical" href="https://yogakrisna.dev/projects.html">
-  <title>Hire Expert Web Developer | 15+ Professional Projects Portfolio - Laravel, Vue.js, React, Flutter Specialist</title>
+  <title>Projects Portfolio - Yoga Krisna | 15+ Web &amp; Mobile Projects</title>
 
-  <link href="css/wa.css" rel="stylesheet" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,897 +21,112 @@
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="css/projects-brutalism.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Stylesheets -->
+  <link href="css/professional.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="projects-page">
   <!-- Loading Screen -->
   <div class="loading" id="loading">
     <div class="spinner"></div>
-    <div class="loading-text">
-      LOADING<span class="loading-dots"></span>
+    <div class="loading-text">Loading</div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <span><span class="status-dot"></span>Available for remote work &amp; freelance projects</span>
+      <a href="contact.html">Hire me &rarr;</a>
     </div>
   </div>
 
-  <!-- Animated Background -->
-  <div class="bg-animated"></div>
-
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">YOGA KRISNA</a>
+      <a href="index.html" class="logo">Yoga Krisna</a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
         <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Hire Me</a></li>
       </ul>
-      <button class="mobile-toggle" id="mobile-toggle">
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
         <i class="bi bi-list"></i>
       </button>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="main-content">
+  <!-- Page Hero -->
+  <section class="page-hero">
     <div class="container">
-      <!-- Page Header -->
       <div class="page-header fade-in">
-        <h1 class="page-title">PROJECTS</h1>
+        <span class="section-eyebrow">Portfolio</span>
+        <h1 class="page-title">Selected Projects</h1>
         <p class="page-subtitle">
-          PROFESSIONAL WEB DEVELOPER • 15+ COMPLETED PROJECTS • MOBILE APPS • E-COMMERCE SOLUTIONS • FINTECH PLATFORMS • GAME DEVELOPMENT • CUSTOM SOFTWARE
+          A collection of web and mobile applications I've built over the years &mdash;
+          from mobile fintech apps to enterprise dashboards and e-commerce platforms.
         </p>
       </div>
-
-      <!-- Mobile Applications Section -->
-      <section class="section-header fade-in">
-        <h2 class="section-title">MOBILE APPS</h2>
-      </section>
-
-      <!-- E-Wallet Mobile App -->
-      <article class="project-card project-content project-content fade-in">
-        <div id="videoContainer">
-          <video class="project-video" id="myVideo" controls muted>
-            <source src="assets/flutterdemo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <img id="fallbackImage" src="assets/fluttermockup.png" alt="Flutter E-Wallet Mobile App Mockup - Yoga Krisna Portfolio" class="project-image fallback-hidden" />
-
-        <h2 class="project-title">E-WALLET MOBILE APPS</h2>
-
-        <div class="project-links">
-          <a href="https://github.com/krisnaxyoga/tomato_ewallet.git" class="project-link" target="_blank"
-            rel="noopener">
-            <i class="bi bi-github"></i>
-            GITHUB REPO
-          </a>
-        </div>
-
-        <div class="project-content">
-          <div class="project-carousel">
-            <div class="carousel-container" id="carousel1">
-              <img src="assets/slidermobile/1.png" alt="E-wallet Screenshot 1" class="carousel-image active">
-              <img src="assets/slidermobile/2.png" alt="E-wallet Screenshot 2" class="carousel-image">
-              <img src="assets/slidermobile/5.png" alt="E-wallet Screenshot 3" class="carousel-image">
-
-              <button class="carousel-controls carousel-prev" onclick="prevSlide('carousel1')">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="carousel-controls carousel-next" onclick="nextSlide('carousel1')">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-
-              <div class="carousel-indicators">
-                <span class="carousel-indicator active" onclick="currentSlide('carousel1', 1)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel1', 2)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel1', 3)"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-details">
-            <h3>Business Challenges & Market Opportunity:</h3>
-            <p>
-              <strong>E-wallet mobile app development</strong> addresses critical fintech industry challenges in delivering seamless, secure, and user-friendly digital payment solutions for modern businesses. Traditional financial systems lack the agility, accessibility, and innovative features demanded by today's consumers, creating significant opportunities for custom mobile application development and financial technology solutions.
-            </p>
-
-            <h3>Professional Development Solution:</h3>
-            <p>
-              As an expert <strong>Flutter mobile app developer</strong> and <strong>Laravel backend specialist</strong>, I engineered this comprehensive e-wallet solution combining cutting-edge mobile development technologies with secure backend infrastructure. This <strong>fintech mobile application</strong> demonstrates advanced capabilities in:
-            </p>
-            <ul>
-              <li>Intuitive user interface: Customers can effortlessly manage transactions and account balances via a
-                user-friendly mobile app interface, reducing the complexity of financial management tasks.</li>
-              <li>Secure transactions: Laravel's built-in security features and encrypted communication protocols ensure
-                that all financial transactions are protected, maintaining user trust and data integrity.</li>
-              <li>Cross-platform compatibility: Leveraging Flutter ensures the app works seamlessly across iOS and
-                Android devices, providing a consistent experience across different platforms.</li>
-              <li>Feature-rich functionality: Key features include real-time transaction monitoring, bill splitting,
-                digital receipts, and personalized spending insights, empowering users with comprehensive financial
-                control.</li>
-            </ul>
-
-            <h3>Business Impact & Results:</h3>
-            <p>This professional <strong>mobile app development project</strong> delivers measurable business value for fintech companies and financial service providers:</p>
-            <ul>
-              <li><strong>Enhanced User Engagement:</strong> Advanced UI/UX design and seamless functionality drive 95% customer satisfaction, fostering stronger user loyalty and increasing app retention rates for businesses seeking mobile solutions.</li>
-              <li><strong>Operational Excellence:</strong> Automated transaction processing and Laravel backend optimization streamline financial operations, reducing operational costs by 60% while improving service delivery efficiency.</li>
-              <li><strong>Market Expansion:</strong> Cross-platform mobile development ensures broader reach across iOS and Android users, driving 40% increase in market penetration and revenue opportunities for digital payment platforms.</li>
-              <li><strong>Competitive Advantage:</strong> Innovative features and reliable performance position businesses as technology leaders in the competitive fintech marketplace, attracting enterprise clients seeking custom development services.</li>
-            </ul>
-
-            <h3>Why Choose This Developer:</h3>
-            <p>
-              This <strong>Flutter e-wallet development project</strong> showcases expertise in full-stack mobile application development, combining advanced frontend technologies with secure backend architecture. For businesses seeking <strong>custom mobile app development</strong>, <strong>fintech solutions</strong>, or <strong>digital payment platforms</strong>, this portfolio demonstrates the technical proficiency and business acumen needed to deliver enterprise-grade mobile applications that drive growth and innovation.
-            </p>
-
-            <div class="tech-tags">
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Dart</span>
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">Laravel</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Traffic Signs Game -->
-      <article class="project-card project-content project-content fade-in">
-        <div class="image-grid">
-          <img src="assets/slidermobile/tf01.jpg" alt="Traffic Signs Game Screenshot 1">
-          <img src="assets/slidermobile/tf03.jpg" alt="Traffic Signs Game Screenshot 2">
-          <img src="assets/slidermobile/tf04.jpg" alt="Traffic Signs Game Screenshot 3">
-          <img src="assets/slidermobile/tf06.jpg" alt="Traffic Signs Game Screenshot 4">
-        </div>
-
-        <h2 class="project-title">TRAFFIC SIGNS GAME</h2>
-
-        <div class="project-links">
-          <a href="https://github.com/krisnaxyoga/tomato_ewallet.git" class="project-link" target="_blank"
-            rel="noopener">
-            <i class="bi bi-github"></i>
-            GITHUB REPO
-          </a>
-          <a href="https://www.figma.com/design/3w9oQCcQJXxfrNnd0OPB4b/Untitled?t=R2H6MjGUL91vXjGI-0"
-            class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-palette"></i>
-            Figma Design
-          </a>
-        </div>
-
-        <div class="project-content">
-          <div class="project-carousel">
-            <div class="carousel-container" id="carousel2">
-              <img src="assets/slidermobile/tf01.jpg" alt="Traffic Signs Screenshot 1" class="carousel-image active">
-              <img src="assets/slidermobile/tf02.jpg" alt="Traffic Signs Screenshot 2" class="carousel-image">
-              <img src="assets/slidermobile/tf03.jpg" alt="Traffic Signs Screenshot 3" class="carousel-image">
-              <img src="assets/slidermobile/tf04.jpg" alt="Traffic Signs Screenshot 4" class="carousel-image">
-              <img src="assets/slidermobile/tf05.jpg" alt="Traffic Signs Screenshot 5" class="carousel-image">
-              <img src="assets/slidermobile/tf06.jpg" alt="Traffic Signs Screenshot 6" class="carousel-image">
-              <img src="assets/slidermobile/tf07.jpg" alt="Traffic Signs Screenshot 7" class="carousel-image">
-              <img src="assets/slidermobile/tf08.jpg" alt="Traffic Signs Screenshot 8" class="carousel-image">
-              <img src="assets/slidermobile/tf09.jpg" alt="Traffic Signs Screenshot 9" class="carousel-image">
-              <img src="assets/slidermobile/tf10.jpg" alt="Traffic Signs Screenshot 10" class="carousel-image">
-
-              <button class="carousel-controls carousel-prev" onclick="prevSlide('carousel2')">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="carousel-controls carousel-next" onclick="nextSlide('carousel2')">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-
-              <div class="carousel-indicators">
-                <span class="carousel-indicator active" onclick="currentSlide('carousel2', 1)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 2)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 3)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 4)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 5)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 6)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 7)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 8)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 9)"></span>
-                <span class="carousel-indicator" onclick="currentSlide('carousel2', 10)"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-details">
-            <h3>Challenges:</h3>
-            <p>
-              The game industry faces challenges in delivering engaging, educational, and user-friendly experiences for
-              teaching traffic signs. Traditional methods of teaching traffic signs often lack interactivity and
-              real-world applicability, making it difficult for players to retain information and apply it in real-life
-              situations.
-            </p>
-
-            <h3>Solution:</h3>
-            <p>
-              To address these challenges, I developed a robust traffic signs detection application using Flutter for
-              the
-              frontend and Laravel with MySQL for the backend. The application offers:
-            </p>
-            <ul>
-              <li>Accurate traffic signs detection: Customers can effortlessly detect traffic signs via a user-friendly
-                mobile app interface, reducing the complexity of driving tasks.</li>
-              <li>Real-time traffic signs recognition: Laravel's built-in machine learning features and image processing
-                protocols ensure that all traffic signs are recognized in real-time, maintaining user trust and data
-                integrity.</li>
-              <li>Cross-platform compatibility: Leveraging Flutter ensures the app works seamlessly across iOS and
-                Android devices, providing a consistent experience across different platforms.</li>
-              <li>Feature-rich functionality: Key features include real-time traffic signs recognition, traffic signs
-                classification, and personalized traffic signs alerts, empowering users with comprehensive traffic
-                safety control.</li>
-            </ul>
-
-            <div class="tech-tags">
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Dart</span>
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">Laravel</span>
-              <span class="tech-tag">Laravel Filament</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      
-
-      <!-- Web Applications Section -->
-      <section class="section-header fade-in">
-        <h2 class="section-title">WEB APPLICATIONS</h2>
-      </section>
-<!-- Tetris Game -->
-      <article class="project-card project-content project-content fade-in">
-        <div class="project-media">
-          <iframe src="tetris.html" width="100%" height="400" style="border: 3px solid var(--brutal-black); border-radius: 8px; background: var(--brutal-black);" title="Tetris Game Demo"></iframe>
-        </div>
-
-        <div class="project-content">
-          <h2 class="project-title">CLASSIC TETRIS GAME</h2>
-          <div class="project-meta">
-            <span class="project-category">WEB GAME</span>
-            <span class="project-year">2025</span>
-          </div>
-
-          <div class="project-links">
-            <a href="tetris.html" class="project-link" target="_blank">
-              <i class="bi bi-play"></i>
-              PLAY GAME
-            </a>
-            <a href="tetris.html" class="project-link" target="_blank">
-              <i class="bi bi-code-slash"></i>
-              VIEW SOURCE
-            </a>
-          </div>
-
-          <div class="project-description">
-            <p><strong>Classic Tetris game</strong> built from scratch using pure HTML5, CSS3, and vanilla JavaScript. Features smooth gameplay, score tracking, and responsive controls for an authentic retro gaming experience.</p>
-            
-            <div class="project-features">
-              <h4>GAME FEATURES:</h4>
-              <ul>
-                <li>Classic Tetris gameplay mechanics</li>
-                <li>Real-time score and level tracking</li>
-                <li>Smooth piece rotation and movement</li>
-                <li>Line clearing animations</li>
-                <li>Increasing difficulty levels</li>
-                <li>Responsive keyboard controls</li>
-                <li>Game over detection and restart</li>
-                <li>Retro-style visual design</li>
-              </ul>
-            </div>
-
-            <div class="project-features">
-              <h4>CONTROLS:</h4>
-              <ul>
-                <li><strong>Arrow Keys:</strong> Move and rotate pieces</li>
-                <li><strong>Spacebar:</strong> Drop piece instantly</li>
-                <li><strong>P:</strong> Pause/Resume game</li>
-                <li><strong>R:</strong> Restart game</li>
-              </ul>
-            </div>
-
-            <div class="tech-stack">
-              <h4>TECHNOLOGY STACK:</h4>
-              <div class="tech-tags">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Canvas API</span>
-                <span class="tech-tag">Game Logic</span>
-                <span class="tech-tag">DOM Manipulation</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Snake Game -->
-      <article class="project-card project-content fade-in">
-        <div class="project-media">
-          <iframe src="snake.html" width="100%" height="400" style="border: 3px solid var(--brutal-black); border-radius: 8px; background: var(--brutal-black);" title="Snake Game Demo"></iframe>
-        </div>
-
-        <div class="project-content">
-          <h2 class="project-title">CLASSIC SNAKE GAME</h2>
-          <div class="project-meta">
-            <span class="project-category">WEB GAME</span>
-            <span class="project-year">2025</span>
-          </div>
-
-          <div class="project-links">
-            <a href="snake.html" class="project-link" target="_blank">
-              <i class="bi bi-play"></i>
-              PLAY GAME
-            </a>
-            <a href="snake.html" class="project-link" target="_blank">
-              <i class="bi bi-code-slash"></i>
-              VIEW SOURCE
-            </a>
-          </div>
-
-          <div class="project-description">
-            <p><strong>Classic Snake Game</strong> recreated with modern web technologies using HTML5 Canvas, CSS3, and vanilla JavaScript. Experience the nostalgic arcade gameplay with smooth animations, progressive difficulty, and responsive design optimized for both desktop and mobile devices.</p>
-            
-            <div class="project-features">
-              <h4>GAME FEATURES:</h4>
-              <ul>
-                <li>Classic Snake arcade gameplay mechanics</li>
-                <li>Progressive speed increase and difficulty scaling</li>
-                <li>Real-time score tracking and high score system</li>
-                <li>Smooth snake movement and food collection</li>
-                <li>Collision detection and game over states</li>
-                <li>Responsive controls for desktop and mobile</li>
-                <li>Retro pixel-perfect graphics and animations</li>
-                <li>Instant restart and continuous gameplay</li>
-              </ul>
-            </div>
-
-            <div class="project-features">
-              <h4>GAME CONTROLS:</h4>
-              <ul>
-                <li><strong>Arrow Keys / WASD:</strong> Control snake direction</li>
-                <li><strong>Spacebar:</strong> Pause/Resume game</li>
-                <li><strong>Enter:</strong> Restart after game over</li>
-                <li><strong>Touch Controls:</strong> Swipe gestures on mobile</li>
-              </ul>
-            </div>
-
-            <div class="tech-stack">
-              <h4>DEVELOPMENT STACK:</h4>
-              <div class="tech-tags">
-                <span class="tech-tag">HTML5 Canvas</span>
-                <span class="tech-tag">JavaScript ES6</span>
-                <span class="tech-tag">CSS3 Animations</span>
-                <span class="tech-tag">Responsive Design</span>
-                <span class="tech-tag">Game Development</span>
-                <span class="tech-tag">Mobile Optimization</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-      
-      <!-- Melanjo Online Store -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/tokoonline/admin.png" alt="Melanjo Online Store" class="project-image">
-
-        <h2 class="project-title">MELANJO: ONLINE STORE</h2>
-
-        <div class="project-links">
-          <a href="melanjo.html" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-eye"></i>
-            Show More
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>E-commerce Development Challenge:</h3>
-          <p>
-            Developing a comprehensive <strong>e-commerce platform for SME businesses</strong> requires addressing complex requirements including secure payment processing, real-time shipping cost calculations via RajaOngkir API integration, and optimal performance within the Laravel framework. Modern businesses need scalable <strong>online store solutions</strong> that drive sales growth and enhance customer experience.
-          </p>
-
-          <h3>Professional E-commerce Solution:</h3>
-          <p>
-            As an experienced <strong>Laravel e-commerce developer</strong>, I engineered this full-featured online marketplace over three months of dedicated development, encompassing strategic planning, advanced development, comprehensive testing, and successful deployment. This <strong>custom e-commerce development project</strong> showcases expertise in building scalable retail platforms that help businesses expand their digital presence and increase revenue.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-            <span class="tech-tag">RajaOngkir API</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- AccessWaste -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/accesswaste.png" alt="AccessWaste" class="project-image">
-
-        <h2 class="project-title">ACCESSWASTE</h2>
-
-        <div class="project-links">
-          <a href="https://accesswaste.com.au/" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-globe"></i>
-            accesswaste.com.au
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Waste Management Industry Digital Transformation:</h3>
-          <p>
-            The <strong>waste disposal industry</strong> in Perth, Australia required innovative digital solutions to modernize traditional skipbin booking processes. Businesses needed an efficient, user-friendly <strong>online booking platform</strong> that eliminates cumbersome manual procedures and provides seamless customer experience for waste management services.
-          </p>
-
-          <h3>Professional Web Application Development:</h3>
-          <p>
-            As a skilled <strong>Laravel and Vue.js developer</strong>, I architected and developed this comprehensive skipbin booking platform combining modern web technologies with intuitive user interface design. This <strong>business automation solution</strong> demonstrates expertise in creating industry-specific applications that streamline operations, improve customer satisfaction, and drive business growth for service-based companies.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">Vue.js</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Pandooin -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/pandooin.png" alt="Pandooin" class="project-image">
-
-        <h2 class="project-title">PANDOOIN</h2>
-
-        <div class="project-links">
-          <a href="https://pandooin.com/" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-globe"></i>
-            pandooin.com
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            The travel industry faces challenges in providing a user-friendly, comprehensive, and personalized online
-            platform for discovering and booking travel packages. Traditional online platforms are often complex,
-            unintuitive, and fail to offer a personalized user experience.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I developed a modern travel marketplace using Laravel, Inertia.js, and Vue.js to address these challenges.
-            This marketplace offers easy travel package search and discovery, advanced filters and settings,
-            comprehensive
-            travel package information, secure and easy online booking, personalized user experience, responsive and
-            modern design.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">Vue.js</span>
-            <span class="tech-tag">Inertia.js</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Tailwind CSS</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Village Population System -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/desa.png" alt="Village Population System" class="project-image">
-
-        <h2 class="project-title">VILLAGE POPULATION SYSTEM</h2>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Villages in Indonesia often face challenges in managing population data accurately and efficiently.
-            Traditional recording systems are often manual, time-consuming, and prone to errors. Lack of access to
-            accurate population data can hinder planning and decision-making at the village level.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I developed a modern village population system using Laravel, Inertia.js, and Vue.js to address these
-            challenges.
-            This system offers easy and centralized population data recording, secure and instant data access,
-            comprehensive
-            data reports and analysis, interactive data visualizations, responsive and user-friendly design.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Resellr -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/resellr.png" alt="Resellr" class="project-image">
-
-        <h2 class="project-title">RESELLR</h2>
-
-        <div class="project-links">
-          <a href="https://resellr.id/" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-globe"></i>
-            resellr.id
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            SMEs in Indonesia often face difficulties in reaching a wider market and increasing online sales.
-            Traditional reseller platforms often have complex, inefficient processes, and lack integration with
-            secure and user-friendly payment systems.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I developed a modern reseller platform for SMEs using Laravel and Ipaymu to address these challenges.
-            This platform offers easy and quick reseller registration, comprehensive product catalog, competitive
-            pricing,
-            integrated ordering and payment system, real-time order tracking and reports.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- QRMenu -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/qrmenu.png" alt="QRMenu" class="project-image">
-
-        <h2 class="project-title">QRMENU: RESTAURANT APP</h2>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Traditional restaurant menus often face limitations in terms of information, interactivity, and
-            accessibility.
-            Physical menus can be cluttered, outdated, and difficult to maintain, while digital menus on tablets or
-            kiosks
-            can be expensive and impractical.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I spearheaded the development of QRMenu, a restaurant application using Laravel, addressing these challenges
-            and revolutionizing the way restaurants present their menus. This application empowers restaurants with
-            digital
-            and interactive menus, rich menu content, real-time menu updates, seamless ordering system.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- AsmoGPSKU -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/asmo.png" alt="AsmoGPSKU" class="project-image">
-
-        <h2 class="project-title">ASMOGPSKU: SHIPMENT DATA APP</h2>
-
-        <div class="project-links">
-          <a href="https://asmogpsku.com/" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-globe"></i>
-            asmogpsku.com
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Astramotor Bali, a leading motorcycle dealership in Indonesia, faced the challenge of manually entering
-            daily
-            shipment data, a time-consuming and error-prone process that hindered operational efficiency and data
-            accuracy.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I took the initiative to develop a daily shipment data entry application using Laravel, addressing these
-            challenges
-            and streamlining data management for Astramotor Bali. This application empowers the company with automated
-            data entry,
-            real-time data updates, streamlined shipment processing, comprehensive data management.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Astra Motor Bali Catalog -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/astrakatalog.png" alt="Astra Motor Bali Catalog" class="project-image">
-
-        <h2 class="project-title">ASTRA MOTOR CATALOG</h2>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Astramotor, a leading motorcycle dealership in Indonesia, faced the challenge of managing and providing
-            access to
-            a vast amount of Honda motorcycle spare parts data. Their existing system was outdated, inefficient, and
-            lacked
-            user-friendly features.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I spearheaded the development of Astramotor Katalog, a modern and comprehensive spare parts catalog using
-            Laravel,
-            to address these challenges. This application empowers Astramotor dealers with easy access to spare parts
-            data,
-            real-time inventory tracking, streamlined ordering process.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Arcturus -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/arcturus.png" alt="Arcturus" class="project-image">
-
-        <h2 class="project-title">ARCTURUS: HOTEL BOOKING</h2>
-
-        <div class="project-links">
-          <a href="https://github.com/krisnaxyoga/arcturus" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-github"></i>
-            arcturus.my.id
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Traditional travel agents often face challenges in securing competitive hotel rates and providing a seamless
-            booking experience for their clients. Manual booking processes are time-consuming, prone to errors, and
-            limit
-            access to real-time inventory and pricing.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I developed Arcturus, a modern hotel booking app using Laravel, Inertia.js, and React.js to address these
-            challenges.
-            This app empowers travel agents with easy hotel search and comparison, real-time inventory and pricing,
-            streamlined
-            booking process, centralized booking management.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">React.js</span>
-            <span class="tech-tag">Inertia.js</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Mulia Privilege -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/muliapr.png" alt="Mulia Privilege" class="project-image">
-
-        <h2 class="project-title">MULIA PRIVILEGE</h2>
-
-        <div class="project-links">
-          <a href="muliaprivileges.html" class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-eye"></i>
-            Show More
-          </a>
-        </div>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            The modern hospitality industry faces challenges in enhancing guest loyalty and delivering more personalized
-            and memorable experiences. Traditional loyalty programs are often convoluted, unexciting, and fail to
-            provide
-            sufficient value to guests.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I developed Mulia Privilege, a modern loyalty app using Next.js and Node.js to address these challenges.
-            This application offers easy registration and participation, diverse point earning opportunities, enticing
-            point redemption,
-            intuitive and personalized user experience, seamless integration with hotel systems.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">Next.js</span>
-            <span class="tech-tag">Express.js</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- UI & UX Design Section -->
-      <section class="section-header fade-in">
-        <h2 class="section-title">UI & UX DESIGN</h2>
-      </section>
-
-      <!-- TJS Shuttle Design -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/tjsshuttle.png" alt="TJS Shuttle Design" class="project-image">
-
-        <h2 class="project-title">TJS SHUTTLE UI/UX</h2>
-
-        <div class="project-links">
-          <a href="https://www.figma.com/design/WjGEfxgKkn7DM9E186agKF/Tj's-Shuttle-homepage?node-id=54-2&t=z0Nu9tGG3EmhKBlB-1"
-            class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-palette"></i>
-            Show More
-          </a>
-        </div>
-      </article>
-
-      <!-- MyPortfolio Design -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/myprorto.png" alt="MyPortfolio Design" class="project-image">
-
-        <h2 class="project-title">PORTFOLIO UI/UX</h2>
-
-        <div class="project-links">
-          <a href="https://www.figma.com/design/pmjJOyQO2KHmnDQXdLAyaB/my_portofolio?node-id=0-1&t=fdM5wX5T5k7UWP25-1"
-            class="project-link" target="_blank" rel="noopener">
-            <i class="bi bi-palette"></i>
-            Show More
-          </a>
-        </div>
-      </article>
-
-      <!-- REST API Section -->
-      <section class="section-header fade-in">
-        <h2 class="section-title">REST API</h2>
-      </section>
-
-      <!-- Mulia PMS API -->
-      <article class="project-card project-content fade-in">
-        <img src="assets/pmsapidoc.png" alt="Mulia PMS API" class="project-image">
-
-        <h2 class="project-title">MULIA PMS REST API</h2>
-
-        <div class="project-details">
-          <h3>Challenges:</h3>
-          <p>
-            Mulia PMS, a comprehensive hotel management system, faced the challenge of developing a robust and scalable
-            backend API to seamlessly support its frontend application. The existing API lacked performance,
-            flexibility,
-            and scalability, hindering the overall efficiency of the PMS.
-          </p>
-
-          <h3>Solution:</h3>
-          <p>
-            I took on the task of developing a modern and efficient REST API using Node.js and Express.js to address
-            these challenges.
-            This API provides a secure and reliable foundation for Mulia PMS, enabling streamlined data exchange,
-            enhanced performance,
-            scalable architecture, comprehensive API endpoints, secure API authentication.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">Express.js</span>
-            <span class="tech-tag">MySQL</span>
-          </div>
-        </div>
-      </article>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Projects loaded dynamically from data/projects.json -->
+      <div id="projects-root"></div>
 
       <!-- Call to Action -->
-      <div class="cta-section fade-in">
-        <h2 class="cta-title">READY TO TRANSFORM YOUR BUSINESS WITH CUSTOM DEVELOPMENT?</h2>
-        <p class="cta-subtitle">GET YOUR PROJECT QUOTE TODAY</p>
+      <div class="cta-card fade-in">
+        <h2 class="cta-title">Have a project in mind?</h2>
+        <p class="cta-subtitle">Let's discuss how I can help bring your idea to life.</p>
         <a href="contact.html" class="cta-button">
-          <i class="bi bi-envelope"></i>
-          HIRE ME NOW
+          <i class="bi bi-send"></i>
+          Get in Touch
         </a>
       </div>
     </div>
   </main>
-  <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hai%20Yoga%20Krisna%2C%20Saya%20tertarik%20dengan%20jasa%20anda."
-    class="whatsapp-float" target="_blank" rel="noopener">
+
+  <!-- WhatsApp Float -->
+  <a href="https://api.whatsapp.com/send?phone=6285121102295&text=Hi%20Yoga%20Krisna%2C%20I%27d%20like%20to%20discuss%20a%20project."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Yoga Krisna. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#services">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2025 Yoga Krisna. All rights reserved. &middot; Built with care in Bali, Indonesia.</p>
+      </div>
     </div>
   </footer>
 
+  <script src="js/projects-renderer.js"></script>
   <script>
     // Loading screen
     window.addEventListener('load', function () {
       const loading = document.getElementById('loading');
-      setTimeout(() => {
-        loading.classList.add('hidden');
-      }, 1000);
+      setTimeout(() => loading.classList.add('hidden'), 800);
     });
 
     // Mobile menu toggle
     const mobileToggle = document.getElementById('mobile-toggle');
     const navMenu = document.getElementById('nav-menu');
-
     mobileToggle.addEventListener('click', function () {
       navMenu.classList.toggle('active');
       const icon = this.querySelector('i');
@@ -919,100 +134,27 @@
       icon.classList.toggle('bi-x');
     });
 
-    // Video fallback
-    var video = document.getElementById("myVideo");
-    var fallbackImage = document.getElementById("fallbackImage");
-    var videoContainer = document.getElementById("videoContainer");
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 100);
+    });
 
-    if (video) {
-      video.addEventListener("error", function () {
-        fallbackImage.style.display = "block";
-        videoContainer.style.display = "none";
-      });
-    }
-
-    // Carousel functionality
-    let currentSlides = {};
-
-    function initCarousel(carouselId) {
-      currentSlides[carouselId] = 1;
-    }
-
-    function showSlide(carouselId, n) {
-      const carousel = document.getElementById(carouselId);
-      const slides = carousel.querySelectorAll('.carousel-image');
-      const indicators = carousel.querySelectorAll('.carousel-indicator');
-
-      if (n > slides.length) currentSlides[carouselId] = 1;
-      if (n < 1) currentSlides[carouselId] = slides.length;
-
-      slides.forEach(slide => slide.classList.remove('active'));
-      indicators.forEach(indicator => indicator.classList.remove('active'));
-
-      slides[currentSlides[carouselId] - 1].classList.add('active');
-      indicators[currentSlides[carouselId] - 1].classList.add('active');
-    }
-
-    function nextSlide(carouselId) {
-      showSlide(carouselId, currentSlides[carouselId] += 1);
-    }
-
-    function prevSlide(carouselId) {
-      showSlide(carouselId, currentSlides[carouselId] -= 1);
-    }
-
-    function currentSlide(carouselId, n) {
-      showSlide(carouselId, currentSlides[carouselId] = n);
-    }
-
-    // Initialize carousels
-    initCarousel('carousel1');
-    initCarousel('carousel2');
-
-    // Auto-play carousels
-    setInterval(() => {
-      nextSlide('carousel2');
-    }, 3000);
-
-    // Scroll animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
+    // Fade-in
     const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Enhanced hover effects
-    document.querySelectorAll('.glass-card').forEach(card => {
-      card.addEventListener('mouseenter', function () {
-        this.style.transform = 'translateY(-8px) scale(1.02)';
-      });
-
-      card.addEventListener('mouseleave', function () {
-        this.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
