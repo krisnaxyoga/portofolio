@@ -11,6 +11,13 @@
       },
       "experience": [
         {
+          "period": "MAY 2025 - PRESENT",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "<a href=\"https://juaraholding.com/\" target=\"_blank\" rel=\"noopener\">Juara Holding Group</a> · Contract",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Developing fullstack solutions across the group's brands. Built a Laravel-based booking system for <strong>Bali Premium Trip</strong>, revamped and sliced UIs for <strong>Juara Production</strong>, <strong>Labuan Bajo Production</strong>, and <strong>Komodo Luxury</strong>, and built a Laravel photo storage service for <strong>Bali Premium Villa</strong>. Built <a href=\"https://app.indonesiajuara.asia/\" target=\"_blank\" rel=\"noopener\">app.indonesiajuara.asia</a> to manage vessel data for Indonesia Juara Trip. Engineered two custom WordPress plugins embedded directly in the company's custom themes: an array-based <strong>wording editor</strong> that reduces SEO copy changes from server-side code edits (taking hours) to seconds via wp-admin, and a <strong>Git pull plugin</strong> that deploys themes from GitHub/GitLab through wp-admin without requiring CI/CD setup &mdash; a deliberate semi-automated approach to minimize staging-to-production errors."
+        },
+        {
           "period": "FEB 2023 - FEB 2025",
           "position": "JUNIOR FULLSTACK DEVELOPER",
           "company": "The Mulia, Mulia Resort & Villas - Nusa Dua",
@@ -102,6 +109,13 @@
         "technologies": "TEKNOLOGI & FRAMEWORK"
       },
       "experience": [
+        {
+          "period": "MEI 2025 - SAAT INI",
+          "position": "FULLSTACK DEVELOPER",
+          "company": "<a href=\"https://juaraholding.com/\" target=\"_blank\" rel=\"noopener\">Juara Holding Group</a> · Kontrak",
+          "location": "Denpasar, Bali, Indonesia",
+          "description": "Mengembangkan solusi fullstack untuk berbagai brand di bawah grup. Membuat <strong>booking system</strong> berbasis Laravel untuk <strong>Bali Premium Trip</strong>, melakukan slicing dan revamp UI untuk <strong>Juara Production</strong>, <strong>Labuan Bajo Production</strong>, dan <strong>Komodo Luxury</strong>, serta membangun sistem penyimpanan foto berbasis Laravel untuk <strong>Bali Premium Villa</strong>. Membangun <a href=\"https://app.indonesiajuara.asia/\" target=\"_blank\" rel=\"noopener\">app.indonesiajuara.asia</a> untuk mengelola data kapal Indonesia Juara Trip. Membuat dua plugin WordPress custom yang ditanam langsung di theme perusahaan: <strong>wording editor</strong> berbasis array yang memangkas waktu update copy SEO dari hitungan jam (edit kode di server) menjadi hitungan detik via wp-admin, dan plugin <strong>Git pull</strong> yang men-deploy theme dari GitHub/GitLab langsung dari wp-admin tanpa perlu setup CI/CD &mdash; pendekatan semi-otomatis yang sengaja dipilih untuk meminimalisir error dari staging ke production."
+        },
         {
           "period": "FEB 2023 - FEB 2025",
           "position": "JUNIOR FULLSTACK DEVELOPER",
