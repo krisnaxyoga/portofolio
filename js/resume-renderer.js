@@ -38,44 +38,44 @@
     return items.map(s => `<div class="skill-item">${s}</div>`).join('');
   }
 
-  function renderLanguageContent(lang) {
-    const data = resumeData.languages[lang];
+  function renderResumeHtml(data, lang) {
+    const block = data.languages[lang];
     return `
       <section>
         <div class="section-header fade-in">
           <div class="section-icon"><i class="bi bi-briefcase"></i></div>
-          <h2 class="section-title">${data.labels.experience}</h2>
+          <h2 class="section-title">${block.labels.experience}</h2>
         </div>
-        ${renderExperience(data.experience)}
+        ${renderExperience(block.experience)}
       </section>
 
       <section>
         <div class="section-header fade-in">
           <div class="section-icon"><i class="bi bi-mortarboard"></i></div>
-          <h2 class="section-title">${data.labels.education}</h2>
+          <h2 class="section-title">${block.labels.education}</h2>
         </div>
-        ${renderEducation(data.education)}
+        ${renderEducation(block.education)}
       </section>
 
       <section class="skills-section">
         <div class="section-header fade-in">
           <div class="section-icon"><i class="bi bi-tools"></i></div>
-          <h2 class="section-title">${data.labels.skills}</h2>
+          <h2 class="section-title">${block.labels.skills}</h2>
         </div>
         <div class="skills-card fade-in">
           <div class="skills-category">
             <div class="skills-header">
               <div class="skills-icon"><i class="bi bi-gear"></i></div>
-              <h3 class="skills-title">${data.labels.professionalSkills}</h3>
+              <h3 class="skills-title">${block.labels.professionalSkills}</h3>
             </div>
-            <div class="skills-grid">${renderSkills(data.professionalSkills)}</div>
+            <div class="skills-grid">${renderSkills(block.professionalSkills)}</div>
           </div>
           <div class="skills-category">
             <div class="skills-header">
               <div class="skills-icon"><i class="bi bi-code-slash"></i></div>
-              <h3 class="skills-title">${data.labels.technologies}</h3>
+              <h3 class="skills-title">${block.labels.technologies}</h3>
             </div>
-            <div class="skills-grid">${renderSkills(data.technologies)}</div>
+            <div class="skills-grid">${renderSkills(block.technologies)}</div>
           </div>
         </div>
       </section>
@@ -91,11 +91,15 @@
     root.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   }
 
+  function renderResumeInto(data, container, lang) {
+    container.innerHTML = renderResumeHtml(data, lang);
+    observeFadeIn(container);
+  }
+
   function renderActive() {
     const container = document.getElementById('resume-content');
-    if (!container) return;
-    container.innerHTML = renderLanguageContent(currentLang);
-    observeFadeIn(container);
+    if (!container || !resumeData) return;
+    renderResumeInto(resumeData, container, currentLang);
   }
 
   window.switchLanguage = function (lang) {
@@ -121,6 +125,10 @@
       container.innerHTML = `<p style="color:red;text-align:center;padding:2rem;">Failed to load resume: ${err.message}</p>`;
     }
   }
+
+  // Expose API for the admin editor preview
+  window.PortfolioRenderers = window.PortfolioRenderers || {};
+  window.PortfolioRenderers.renderResume = renderResumeInto;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadResume);

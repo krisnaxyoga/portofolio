@@ -138,6 +138,31 @@
           </article>
         `;
       }
+      case 'website-list': {
+        const items = (project.websites || []).map(w => `
+          <div class="website-item" style="border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;background:rgba(255,255,255,0.02);">
+            <a href="${escapeAttr(w.url)}" target="_blank" rel="noopener" style="font-weight:600;text-decoration:none;font-size:1rem;">
+              <i class="bi bi-globe"></i> ${w.name}
+            </a>
+            ${w.pdf ? `<a href="${escapeAttr(w.pdf)}" target="_blank" rel="noopener" class="project-link" style="align-self:flex-start;font-size:.85rem;">
+              <i class="bi bi-file-pdf"></i> View PDF
+            </a>` : ''}
+          </div>
+        `).join('');
+        return `
+          <article class="project-card project-content fade-in">
+            <h2 class="project-title">${project.title}</h2>
+            ${renderLinks(project.links)}
+            <div class="project-details">
+              ${renderDetails(project.details)}
+              <div class="website-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin:1.5rem 0;">
+                ${items}
+              </div>
+              ${renderTech(project.tech)}
+            </div>
+          </article>
+        `;
+      }
       case 'image':
       default: {
         media = `<img src="${escapeAttr(project.image)}" alt="${escapeAttr(project.imageAlt)}" class="project-image">`;
@@ -214,6 +239,26 @@
     root.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   }
 
+  function renderProjectsHtml(data) {
+    let idx = 0;
+    return data.sections.map(section => {
+      const projectsHtml = section.projects.map(p => renderProject(p, idx++)).join('');
+      return `
+        <section class="section-header fade-in">
+          <h2 class="section-title">${section.title}</h2>
+        </section>
+        ${projectsHtml}
+      `;
+    }).join('');
+  }
+
+  function renderProjectsInto(data, container) {
+    container.innerHTML = renderProjectsHtml(data);
+    initCarousels(container);
+    initVideoFallback(container);
+    initFadeIn(container);
+  }
+
   async function loadProjects() {
     const container = document.getElementById('projects-root');
     if (!container) return;
@@ -221,26 +266,15 @@
       const res = await fetch('data/projects.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-
-      let idx = 0;
-      const html = data.sections.map(section => {
-        const projectsHtml = section.projects.map(p => renderProject(p, idx++)).join('');
-        return `
-          <section class="section-header fade-in">
-            <h2 class="section-title">${section.title}</h2>
-          </section>
-          ${projectsHtml}
-        `;
-      }).join('');
-
-      container.innerHTML = html;
-      initCarousels(container);
-      initVideoFallback(container);
-      initFadeIn(container);
+      renderProjectsInto(data, container);
     } catch (err) {
       container.innerHTML = `<p style="color:red;text-align:center;padding:2rem;">Failed to load projects: ${err.message}</p>`;
     }
   }
+
+  // Expose API for the admin editor preview
+  window.PortfolioRenderers = window.PortfolioRenderers || {};
+  window.PortfolioRenderers.renderProjects = renderProjectsInto;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadProjects);

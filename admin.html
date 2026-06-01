@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Portfolio Admin</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/admin.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Login screen -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <h1><i class="bi bi-shield-lock"></i> Portfolio Admin</h1>
+      <p class="muted">Edit konten portfolio via GitHub API. Token disimpan di browser saja, tidak dikirim ke server lain.</p>
+
+      <div class="form-group">
+        <label>GitHub Personal Access Token</label>
+        <input type="password" id="login-token" placeholder="ghp_xxxxxxxxxxxxxxxx" autocomplete="off">
+        <small>
+          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">
+            Buat fine-grained token
+          </a>
+          &mdash; pilih repository ini, beri permission <strong>Contents: Read &amp; write</strong>.
+          Atau pakai
+          <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Portfolio+Admin" target="_blank" rel="noopener">classic token (public_repo)</a>
+          untuk repo publik.
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label>Repository</label>
+        <input type="text" id="login-repo" placeholder="username/portofolio">
+        <small>Format: <code>owner/repo</code> (contoh: <code>krisnajhg/portofolio</code>)</small>
+      </div>
+
+      <div class="form-group">
+        <label>Branch</label>
+        <input type="text" id="login-branch" value="main">
+      </div>
+
+      <button id="login-btn" class="btn primary block">
+        <i class="bi bi-box-arrow-in-right"></i> Login
+      </button>
+      <p id="login-error" class="error" hidden></p>
+    </div>
+  </div>
+
+  <!-- Main app -->
+  <div id="app" hidden>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2><i class="bi bi-grid-3x3-gap-fill"></i> Admin</h2>
+        <p id="repo-label" class="muted"></p>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#projects" class="nav-link active" data-view="projects">
+          <i class="bi bi-collection"></i> Projects
+        </a>
+        <a href="#resume" class="nav-link" data-view="resume">
+          <i class="bi bi-person-badge"></i> Resume
+        </a>
+        <a href="#assets" class="nav-link" data-view="assets">
+          <i class="bi bi-image"></i> Assets
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="index.html" target="_blank" class="btn ghost block">
+          <i class="bi bi-box-arrow-up-right"></i> View Site
+        </a>
+        <button id="logout-btn" class="btn ghost block">
+          <i class="bi bi-box-arrow-right"></i> Logout
+        </button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div id="view-projects" class="view"></div>
+      <div id="view-resume" class="view" hidden></div>
+      <div id="view-assets" class="view" hidden></div>
+    </main>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" hidden></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title">Modal</h3>
+        <button class="modal-close" data-close><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+      <div id="modal-footer" class="modal-footer"></div>
+    </div>
+  </div>
+
+  <!-- Renderers (also used by preview) -->
+  <script src="js/projects-renderer.js"></script>
+  <script src="js/resume-renderer.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

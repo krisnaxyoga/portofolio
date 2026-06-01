@@ -100,6 +100,62 @@
       "title": "WEB APPLICATIONS",
       "projects": [
         {
+          "type": "website-list",
+          "title": "NUSA PENIDA TOURISM COMPANY PROFILES",
+          "links": [],
+          "details": [
+            {
+              "heading": "Project Overview:",
+              "paragraph": "A collection of <strong>company profile websites</strong> for tourism and lifestyle businesses operating around Nusa Penida, Bali. Each site is built as a WordPress-based marketing presence focused on lead generation, SEO performance, and easy content updates for non-technical owners. PDF previews are available for each site below."
+            }
+          ],
+          "websites": [
+            { "name": "activitiespenidatour.com", "url": "https://activitiespenidatour.com/", "pdf": "assets/web-compro/activitiespenidatour.pdf" },
+            { "name": "gahingkarya.com", "url": "https://gahingkarya.com/", "pdf": "assets/web-compro/gahingkarya.pdf" },
+            { "name": "klingkingbeach.com", "url": "https://klingkingbeach.com/", "pdf": "assets/web-compro/klingkingbeach-com.pdf" },
+            { "name": "nusapenidacamping.com", "url": "https://nusapenidacamping.com/", "pdf": "assets/web-compro/nusapenidacamping.pdf" },
+            { "name": "nusapenidatattoo.com", "url": "https://nusapenidatattoo.com/", "pdf": "assets/web-compro/nusapenidatattoo.pdf" },
+            { "name": "penidatripgo.com", "url": "https://penidatripgo.com/", "pdf": "assets/web-compro/penidatripgo.pdf" },
+            { "name": "snorkelingpenida.com", "url": "https://snorkelingpenida.com/", "pdf": "assets/web-compro/snorkelingpenida.pdf" }
+          ],
+          "tech": ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "SEO Optimization"]
+        },
+        {
+          "type": "image-grid",
+          "title": "POS PRIMA KARYA TANI",
+          "imageGrid": [
+            { "src": "assets/pos-primakaryatani/dashboard.png", "alt": "POS Prima Karya Tani Dashboard" },
+            { "src": "assets/pos-primakaryatani/login.png", "alt": "POS Prima Karya Tani Login Screen" }
+          ],
+          "links": [
+            { "icon": "bi-file-pdf", "label": "Homepage PDF", "url": "assets/pos-primakaryatani/homepage-primakaryatani.pdf" },
+            { "icon": "bi-file-pdf", "label": "Offline Mode PDF", "url": "assets/pos-primakaryatani/pos-mode-offline.pdf" }
+          ],
+          "carousel": [
+            { "src": "assets/pos-primakaryatani/dashboard.png", "alt": "POS Dashboard" },
+            { "src": "assets/pos-primakaryatani/login.png", "alt": "POS Login" }
+          ],
+          "carouselAutoplay": true,
+          "details": [
+            {
+              "heading": "Business Challenge:",
+              "paragraph": "<strong>CV. Prima Karya Tani</strong> needed a modern <strong>Point of Sale (POS) web application</strong> to streamline daily sales operations, manage inventory in real time, and continue serving customers even when the internet connection is unreliable &mdash; a common scenario in agricultural and rural retail environments."
+            },
+            {
+              "heading": "Solution:",
+              "paragraph": "I built a full-featured POS web app with a focus on <strong>offline-first reliability</strong> and a clean operator-friendly UI. Key capabilities include:",
+              "list": [
+                "<strong>Offline mode:</strong> Cashiers can continue ringing up sales without internet; transactions sync automatically when connectivity returns.",
+                "<strong>Sales dashboard:</strong> Real-time view of daily revenue, top-selling products, and stock alerts.",
+                "<strong>Inventory management:</strong> Stock tracking with low-stock notifications and purchase order workflow.",
+                "<strong>Multi-user roles:</strong> Separate access for cashier, supervisor, and admin with auditable transaction logs.",
+                "<strong>Responsive UI:</strong> Works on tablets and desktop POS terminals."
+              ]
+            }
+          ],
+          "tech": ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "PWA", "IndexedDB"]
+        },
+        {
           "type": "iframe",
           "title": "CLASSIC TETRIS GAME",
           "iframe": "tetris.html",
