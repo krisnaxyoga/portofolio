@@ -449,8 +449,31 @@
       ]
     },
     {
-      "title": "REST API",
+      "title": "AI & INFRASTRUCTURE TOOLS",
       "projects": [
+        {
+          "type": "image",
+          "title": "AI PBN & SERVER MONITORING DASHBOARD",
+          "image": "assets/tokoonline/admin.png",
+          "imageAlt": "AI PBN and Server Monitoring Dashboard",
+          "links": [],
+          "details": [
+            {
+              "heading": "Business & Engineering Challenge:",
+              "paragraph": "Juara Holding Group manages a vast network of Private Blog Network (PBN) websites and servers. Managing individual server health, Google Search Console indexing, domain authority, and traffic trends manually was highly inefficient for SEO specialists."
+            },
+            {
+              "heading": "AI-Powered Fullstack Solution:",
+              "paragraph": "I engineered a centralized <strong>Server & PBN Monitoring Dashboard</strong> integrating the <strong>Google Search Console (GSC) API</strong> and <strong>Google Gemini API</strong>. Key capabilities include:",
+              "list": [
+                "<strong>Google Search Console Integration:</strong> Automated indexing status monitoring, impression tracking, and search visibility metrics across dozens of PBN websites in one control panel.",
+                "<strong>Gemini AI Traffic & Trend Engine:</strong> Leveraged Google Gemini API to analyze traffic patterns in real-time, automatically flagging underperforming PBN domains that need optimization and highlighting surging traffic trends.",
+                "<strong>Unified SEO Control Room:</strong> Empowered SEO specialists to evaluate network-wide domain performance, detect traffic anomalies, and prioritize content/technical optimization from a single intuitive dashboard."
+              ]
+            }
+          ],
+          "tech": ["PHP", "Laravel", "Google Gemini API", "GSC API", "MySQL", "REST API", "JavaScript", "Bootstrap"]
+        },
         {
           "type": "image",
           "title": "MULIA PMS REST API",
