@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>Document Viewer - Yoga Krisna</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Stylesheets -->
+    <link href="css/professional.css" rel="stylesheet" />
+
+    <style>
+        .pdf-viewer-bar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 0.9rem 1.5rem;
+            background: var(--p-surface, #fff);
+            border-bottom: 1px solid var(--p-border, #e2e2e2);
+        }
+
+        .pdf-viewer-bar .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .pdf-viewer-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 40vw;
+        }
+
+        .pdf-viewer-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .pdf-viewer-actions a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.5rem 0.9rem;
+            border-radius: 8px;
+            border: 1px solid var(--p-border, #e2e2e2);
+            color: inherit;
+        }
+
+        .pdf-viewer-frame-wrap {
+            height: calc(100vh - 58px);
+            background: #525659;
+        }
+
+        .pdf-viewer-frame-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .pdf-viewer-error {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            height: calc(100vh - 58px);
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pdf-viewer-bar">
+        <a href="javascript:void(0)" class="back-link" id="pdf-back-link"><i class="bi bi-arrow-left"></i> Back</a>
+        <span class="pdf-viewer-title" id="pdf-viewer-title">Document</span>
+        <div class="pdf-viewer-actions">
+            <a href="#" id="pdf-download-link" download><i class="bi bi-download"></i> Download</a>
+            <a href="#" id="pdf-newtab-link" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Open in New Tab</a>
+        </div>
+    </div>
+
+    <div id="pdf-viewer-body"></div>
+
+    <script>
+        (function () {
+            function isSafePdfPath(path) {
+                if (typeof path !== 'string' || !path) return false;
+                if (/^[a-z]+:/i.test(path)) return false; // no protocol (http:, javascript:, data:, etc.)
+                if (path.indexOf('//') === 0) return false; // no protocol-relative URLs
+                if (path.indexOf('..') !== -1) return false; // no path traversal
+                return /^assets\/[A-Za-z0-9 _\-\/().]+\.pdf$/i.test(path);
+            }
+
+            var params = new URLSearchParams(window.location.search);
+            var file = params.get('file') || '';
+            var title = params.get('title') || 'Document';
+
+            document.getElementById('pdf-viewer-title').textContent = title;
+            document.title = title + ' - Yoga Krisna';
+
+            var backLink = document.getElementById('pdf-back-link');
+            backLink.addEventListener('click', function () {
+                if (document.referrer && document.referrer.indexOf(window.location.origin) === 0) {
+                    history.back();
+                } else {
+                    window.location.href = 'index.html';
+                }
+            });
+
+            var body = document.getElementById('pdf-viewer-body');
+
+            if (!isSafePdfPath(file)) {
+                body.innerHTML =
+                    '<div class="pdf-viewer-error">' +
+                    '<i class="bi bi-file-earmark-excel" style="font-size:2.5rem;color:var(--p-text-muted,#888);"></i>' +
+                    '<h2>Document not found</h2>' +
+                    '<p>The requested file could not be loaded.</p>' +
+                    '<a href="index.html" class="btn btn-primary">Back to Home</a>' +
+                    '</div>';
+                document.getElementById('pdf-download-link').style.display = 'none';
+                document.getElementById('pdf-newtab-link').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('pdf-download-link').setAttribute('href', file);
+            document.getElementById('pdf-newtab-link').setAttribute('href', file);
+
+            body.innerHTML =
+                '<div class="pdf-viewer-frame-wrap">' +
+                '<iframe src="' + file + '" title="' + title.replace(/"/g, '&quot;') + '"></iframe>' +
+                '</div>';
+        })();
+    </script>
+</body>
+
+</html>

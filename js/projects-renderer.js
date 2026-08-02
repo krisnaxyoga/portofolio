@@ -1,9 +1,532 @@
 (function () {
   'use strict';
 
-  // Fallback dataset containing all 20 portfolio projects
+  // Fallback dataset containing all 20 portfolio projects (mobile apps last; portfolio focus is web/SEO)
   const PROJECTS_DATA_FALLBACK = {
     "sections": [
+      {
+        "title": "WEB APPLICATIONS",
+        "projects": [
+          {
+            "type": "image-grid",
+            "title": "HRIS APPLICATION - JUARA HOLDING GROUP",
+            "image": "assets/hris-jhg.png",
+            "imageGrid": [
+              {
+                "src": "assets/hris-jhg.png",
+                "alt": "HRIS Dashboard - Juara Holding Group"
+              },
+              {
+                "src": "assets/hrisjhgmobile.png",
+                "alt": "HRIS Mobile Responsive View - Juara Holding Group"
+              }
+            ],
+            "links": [],
+            "carousel": [
+              {
+                "src": "assets/hris-jhg.png",
+                "alt": "HRIS Dashboard Desktop View"
+              },
+              {
+                "src": "assets/hrisjhgmobile.png",
+                "alt": "HRIS Mobile Responsive View"
+              }
+            ],
+            "carouselAutoplay": true,
+            "details": [
+              {
+                "heading": "Business Challenge:",
+                "paragraph": "Juara Holding Group needed a centralized Human Resource Information System (HRIS) to replace scattered spreadsheets for managing employees, departments, positions, attendance, and leave across the organization."
+              },
+              {
+                "heading": "Solution:",
+                "paragraph": "A fully responsive HRIS platform covering the complete employee lifecycle, with a dedicated mobile bottom-navigation layout for field and remote staff.",
+                "list": [
+                  "Organization & People management with contract/permanent status tracking",
+                  "Time & Attendance with photo verification: selfie-based clock in/out for identity verification",
+                  "Leave, Overtime & Meeting Room booking approval workflows",
+                  "Recruitment & Work Arrangements management",
+                  "Mobile-first responsive design with bottom-nav mobile experience"
+                ]
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Bootstrap",
+              "Responsive Design",
+              "Camera/Photo Capture API",
+              "REST API"
+            ]
+          },
+          {
+            "type": "website-list",
+            "title": "NUSA PENIDA TOURISM COMPANY PROFILES",
+            "image": "assets/web-compro/activitiespenidatour.pdf",
+            "links": [],
+            "details": [
+              {
+                "heading": "Project Overview:",
+                "paragraph": "A collection of 7 WordPress company profile websites built for tour & lifestyle operators around Nusa Penida, Bali, optimized for SEO performance, lead generation, and fast loading."
+              }
+            ],
+            "websites": [
+              {
+                "name": "activitiespenidatour.com",
+                "url": "https://activitiespenidatour.com/",
+                "pdf": "assets/web-compro/activitiespenidatour.pdf"
+              },
+              {
+                "name": "gahingkarya.com",
+                "url": "https://gahingkarya.com/",
+                "pdf": "assets/web-compro/gahingkarya.pdf"
+              },
+              {
+                "name": "klingkingbeach.com",
+                "url": "https://klingkingbeach.com/",
+                "pdf": "assets/web-compro/klingkingbeach-com.pdf"
+              },
+              {
+                "name": "nusapenidacamping.com",
+                "url": "https://nusapenidacamping.com/",
+                "pdf": "assets/web-compro/nusapenidacamping.pdf"
+              },
+              {
+                "name": "nusapenidatattoo.com",
+                "url": "https://nusapenidatattoo.com/",
+                "pdf": "assets/web-compro/nusapenidatattoo.pdf"
+              },
+              {
+                "name": "penidatripgo.com",
+                "url": "https://penidatripgo.com/",
+                "pdf": "assets/web-compro/penidatripgo.pdf"
+              },
+              {
+                "name": "snorkelingpenida.com",
+                "url": "https://snorkelingpenida.com/",
+                "pdf": "assets/web-compro/snorkelingpenida.pdf"
+              }
+            ],
+            "tech": [
+              "WordPress",
+              "PHP",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "SEO Optimization"
+            ]
+          },
+          {
+            "type": "image-grid",
+            "title": "POS PRIMA KARYA TANI",
+            "image": "assets/pos-primakaryatani/dashboard.png",
+            "imageGrid": [
+              {
+                "src": "assets/pos-primakaryatani/dashboard.png",
+                "alt": "POS Dashboard"
+              },
+              {
+                "src": "assets/pos-primakaryatani/login.png",
+                "alt": "POS Login Screen"
+              }
+            ],
+            "links": [
+              {
+                "icon": "bi-file-pdf",
+                "label": "Homepage PDF",
+                "url": "assets/pos-primakaryatani/homepage-primakaryatani.pdf"
+              },
+              {
+                "icon": "bi-file-pdf",
+                "label": "Offline Mode PDF",
+                "url": "assets/pos-primakaryatani/pos-mode-offline.pdf"
+              }
+            ],
+            "carousel": [
+              {
+                "src": "assets/pos-primakaryatani/dashboard.png",
+                "alt": "POS Dashboard"
+              },
+              {
+                "src": "assets/pos-primakaryatani/login.png",
+                "alt": "POS Login"
+              }
+            ],
+            "carouselAutoplay": true,
+            "details": [
+              {
+                "heading": "Business Challenge:",
+                "paragraph": "CV. Prima Karya Tani needed a point of sale system with offline-first support for rural agricultural retail operations."
+              },
+              {
+                "heading": "Solution:",
+                "paragraph": "Full-featured offline-first POS web application with automatic transaction sync upon reconnecting, real-time inventory management, and multi-user role security.",
+                "list": [
+                  "Offline cashier transaction processing with IndexedDB sync",
+                  "Real-time sales dashboard and revenue metrics",
+                  "Automated inventory management & low-stock alerts",
+                  "Multi-role user authentication (Cashier, Manager, Admin)"
+                ]
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "JavaScript",
+              "Bootstrap",
+              "PWA",
+              "IndexedDB"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "MELANJO: ONLINE STORE",
+            "image": "assets/tokoonline/admin.png",
+            "imageAlt": "Melanjo Online Store",
+            "links": [
+              {
+                "icon": "bi-eye",
+                "label": "Show More",
+                "url": "melanjo.html"
+              }
+            ],
+            "details": [
+              {
+                "heading": "E-commerce Development:",
+                "paragraph": "Full-featured SME online store built with Laravel 10, integrated with RajaOngkir API for real-time shipping calculation and secure checkout."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "RajaOngkir API",
+              "Bootstrap",
+              "jQuery"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "ACCESSWASTE",
+            "image": "assets/accesswaste.png",
+            "imageAlt": "AccessWaste Australia",
+            "links": [
+              {
+                "icon": "bi-globe",
+                "label": "accesswaste.com.au",
+                "url": "https://accesswaste.com.au/"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Waste Logistics Platform:",
+                "paragraph": "Digital waste management and online skipbin booking platform operating in Perth, Australia. Includes real-time quote generation, automated scheduling, and customer portals."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "Vue.js",
+              "MySQL",
+              "Bootstrap"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "PANDOOIN",
+            "image": "assets/pandooin.png",
+            "imageAlt": "Pandooin Travel Marketplace",
+            "links": [
+              {
+                "icon": "bi-globe",
+                "label": "pandooin.com",
+                "url": "https://pandooin.com/"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Travel Marketplace:",
+                "paragraph": "Modern travel package marketplace empowering travelers to search, customize, and book tour packages in Indonesia with reactive search filtering."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "Vue.js",
+              "Inertia.js",
+              "MySQL",
+              "Tailwind CSS"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "VILLAGE POPULATION SYSTEM",
+            "image": "assets/desa.png",
+            "imageAlt": "Village Population System",
+            "links": [],
+            "details": [
+              {
+                "heading": "Government Population System:",
+                "paragraph": "Centralized village demographic recording and reporting system for Indonesian local administration with data analytics and interactive charts."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "JavaScript",
+              "Bootstrap"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "RESELLR",
+            "image": "assets/resellr.png",
+            "imageAlt": "Resellr Platform",
+            "links": [
+              {
+                "icon": "bi-globe",
+                "label": "resellr.id",
+                "url": "https://resellr.id/"
+              }
+            ],
+            "details": [
+              {
+                "heading": "SME Reseller Platform:",
+                "paragraph": "E-commerce reseller distribution system connecting SME suppliers with resellers, featuring automated order routing and Ipaymu payment gateway integration."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Ipaymu API",
+              "Bootstrap"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "QRMENU: RESTAURANT APP",
+            "image": "assets/qrmenu.png",
+            "imageAlt": "QRMenu Restaurant System",
+            "links": [],
+            "details": [
+              {
+                "heading": "Digital Restaurant Menu:",
+                "paragraph": "Contactless QR code menu system allowing restaurant diners to view digital menus, filter dietary preferences, and place orders directly from their mobile phones."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "ASMOGPSKU: SHIPMENT DATA APP",
+            "image": "assets/asmo.png",
+            "imageAlt": "AsmoGPSKU",
+            "links": [
+              {
+                "icon": "bi-globe",
+                "label": "asmogpsku.com",
+                "url": "https://asmogpsku.com/"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Shipment Tracking System:",
+                "paragraph": "Operational shipment logging and logistics monitoring app engineered for Astramotor Bali to replace error-prone manual spreadsheets."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "ASTRA MOTOR CATALOG",
+            "image": "assets/astrakatalog.png",
+            "imageAlt": "Astra Motor Spare Parts Catalog",
+            "links": [],
+            "details": [
+              {
+                "heading": "Spare Parts Catalog System:",
+                "paragraph": "Comprehensive Honda motorcycle spare parts catalog for Astramotor dealers with instant part lookup, stock availability, and ordering workflows."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Bootstrap",
+              "jQuery"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "ARCTURUS: HOTEL BOOKING",
+            "image": "assets/arcturus.png",
+            "imageAlt": "Arcturus Hotel Booking System",
+            "links": [
+              {
+                "icon": "bi-github",
+                "label": "arcturus.my.id",
+                "url": "https://github.com/krisnaxyoga/arcturus"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Hotel Booking Application:",
+                "paragraph": "Travel agent hotel reservation platform built with Laravel, Inertia.js, and React.js for searching room availability, comparing rates, and issuing vouchers."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "React.js",
+              "Inertia.js",
+              "MySQL",
+              "Bootstrap"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "MULIA PRIVILEGE",
+            "image": "assets/muliapr.png",
+            "imageAlt": "Mulia Privilege Loyalty App",
+            "links": [
+              {
+                "icon": "bi-eye",
+                "label": "Show More",
+                "url": "muliaprivileges.html"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Luxury Resort Loyalty Platform:",
+                "paragraph": "Guest loyalty and reward application for The Mulia 5-star resort, featuring point earning algorithms, reward redemptions, and personalized guest services."
+              }
+            ],
+            "tech": [
+              "Next.js",
+              "Node.js",
+              "Express.js",
+              "MySQL",
+              "Bootstrap"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "UI & UX DESIGN",
+        "projects": [
+          {
+            "type": "image-only",
+            "title": "TJS SHUTTLE UI/UX",
+            "image": "assets/tjsshuttle.png",
+            "imageAlt": "TJS Shuttle UI/UX Design",
+            "links": [
+              {
+                "icon": "bi-palette",
+                "label": "Figma Design",
+                "url": "https://www.figma.com/design/WjGEfxgKkn7DM9E186agKF/Tj's-Shuttle-homepage?node-id=54-2&t=z0Nu9tGG3EmhKBlB-1"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Shuttle Booking UI/UX Design:",
+                "paragraph": "Figma design system and user interface prototype for shuttle transportation booking service, focusing on clean user flows and mobile responsiveness."
+              }
+            ],
+            "tech": [
+              "Figma",
+              "UI Design",
+              "UX Research",
+              "Prototyping"
+            ]
+          },
+          {
+            "type": "image-only",
+            "title": "PORTFOLIO UI/UX",
+            "image": "assets/myprorto.png",
+            "imageAlt": "Portfolio UI/UX Design",
+            "links": [
+              {
+                "icon": "bi-palette",
+                "label": "Figma Design",
+                "url": "https://www.figma.com/design/pmjJOyQO2KHmnDQXdLAyaB/my_portofolio?node-id=0-1&t=fdM5wX5T5k7UWP25-1"
+              }
+            ],
+            "details": [
+              {
+                "heading": "Personal Portfolio Design System:",
+                "paragraph": "Figma design system layout exploring typography scales, dark aesthetic UI components, and case study presentations."
+              }
+            ],
+            "tech": [
+              "Figma",
+              "UI Design",
+              "Visual System"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "AI & INFRASTRUCTURE TOOLS",
+        "projects": [
+          {
+            "type": "image",
+            "title": "AI PBN & SERVER MONITORING DASHBOARD",
+            "image": "assets/tokoonline/admin.png",
+            "imageAlt": "AI PBN & Server Monitoring Dashboard",
+            "links": [],
+            "details": [
+              {
+                "heading": "AI-Powered Infrastructure Dashboard:",
+                "paragraph": "Centralized control panel integrating Google Search Console API and Google Gemini API to automatically monitor PBN site indexation, domain authority, and traffic anomaly detection."
+              }
+            ],
+            "tech": [
+              "PHP",
+              "Laravel",
+              "Google Gemini API",
+              "GSC API",
+              "MySQL",
+              "REST API"
+            ]
+          },
+          {
+            "type": "image",
+            "title": "MULIA PMS REST API",
+            "image": "assets/pmsapidoc.png",
+            "imageAlt": "Mulia PMS API",
+            "links": [],
+            "details": [
+              {
+                "heading": "Property Management REST API:",
+                "paragraph": "High-performance Node.js and Express.js REST API providing secure endpoints for hotel PMS reservations, room status updates, and guest authentication."
+              }
+            ],
+            "tech": [
+              "Node.js",
+              "Express.js",
+              "MySQL",
+              "REST API",
+              "JWT"
+            ]
+          }
+        ]
+      },
       {
         "title": "MOBILE APPS",
         "projects": [
@@ -14,12 +537,25 @@
             "fallbackImage": "assets/fluttermockup.png",
             "fallbackAlt": "Flutter E-Wallet Mobile App Mockup - Yoga Krisna Portfolio",
             "links": [
-              { "icon": "bi-github", "label": "GITHUB REPO", "url": "https://github.com/krisnaxyoga/tomato_ewallet.git" }
+              {
+                "icon": "bi-github",
+                "label": "GITHUB REPO",
+                "url": "https://github.com/krisnaxyoga/tomato_ewallet.git"
+              }
             ],
             "carousel": [
-              { "src": "assets/slidermobile/1.png", "alt": "E-wallet Screenshot 1" },
-              { "src": "assets/slidermobile/2.png", "alt": "E-wallet Screenshot 2" },
-              { "src": "assets/slidermobile/5.png", "alt": "E-wallet Screenshot 3" }
+              {
+                "src": "assets/slidermobile/1.png",
+                "alt": "E-wallet Screenshot 1"
+              },
+              {
+                "src": "assets/slidermobile/2.png",
+                "alt": "E-wallet Screenshot 2"
+              },
+              {
+                "src": "assets/slidermobile/5.png",
+                "alt": "E-wallet Screenshot 3"
+              }
             ],
             "carouselAutoplay": false,
             "details": [
@@ -42,28 +578,70 @@
                 "paragraph": "Delivers 95% customer satisfaction and reduces operational costs by 60% with automated transaction processing."
               }
             ],
-            "tech": ["Flutter", "Dart", "PHP", "Laravel", "MySQL", "Bootstrap"]
+            "tech": [
+              "Flutter",
+              "Dart",
+              "PHP",
+              "Laravel",
+              "MySQL",
+              "Bootstrap"
+            ]
           },
           {
             "type": "image-grid",
             "title": "TRAFFIC SIGNS GAME",
             "image": "assets/slidermobile/tf01.jpg",
             "imageGrid": [
-              { "src": "assets/slidermobile/tf01.jpg", "alt": "Traffic Signs Game Screenshot 1" },
-              { "src": "assets/slidermobile/tf03.jpg", "alt": "Traffic Signs Game Screenshot 2" },
-              { "src": "assets/slidermobile/tf04.jpg", "alt": "Traffic Signs Game Screenshot 3" },
-              { "src": "assets/slidermobile/tf06.jpg", "alt": "Traffic Signs Game Screenshot 4" }
+              {
+                "src": "assets/slidermobile/tf01.jpg",
+                "alt": "Traffic Signs Game Screenshot 1"
+              },
+              {
+                "src": "assets/slidermobile/tf03.jpg",
+                "alt": "Traffic Signs Game Screenshot 2"
+              },
+              {
+                "src": "assets/slidermobile/tf04.jpg",
+                "alt": "Traffic Signs Game Screenshot 3"
+              },
+              {
+                "src": "assets/slidermobile/tf06.jpg",
+                "alt": "Traffic Signs Game Screenshot 4"
+              }
             ],
             "links": [
-              { "icon": "bi-github", "label": "GITHUB REPO", "url": "https://github.com/krisnaxyoga/tomato_ewallet.git" },
-              { "icon": "bi-palette", "label": "Figma Design", "url": "https://www.figma.com/design/3w9oQCcQJXxfrNnd0OPB4b/Untitled?t=R2H6MjGUL91vXjGI-0" }
+              {
+                "icon": "bi-github",
+                "label": "GITHUB REPO",
+                "url": "https://github.com/krisnaxyoga/tomato_ewallet.git"
+              },
+              {
+                "icon": "bi-palette",
+                "label": "Figma Design",
+                "url": "https://www.figma.com/design/3w9oQCcQJXxfrNnd0OPB4b/Untitled?t=R2H6MjGUL91vXjGI-0"
+              }
             ],
             "carousel": [
-              { "src": "assets/slidermobile/tf01.jpg", "alt": "Traffic Signs Screenshot 1" },
-              { "src": "assets/slidermobile/tf02.jpg", "alt": "Traffic Signs Screenshot 2" },
-              { "src": "assets/slidermobile/tf03.jpg", "alt": "Traffic Signs Screenshot 3" },
-              { "src": "assets/slidermobile/tf04.jpg", "alt": "Traffic Signs Screenshot 4" },
-              { "src": "assets/slidermobile/tf05.jpg", "alt": "Traffic Signs Screenshot 5" }
+              {
+                "src": "assets/slidermobile/tf01.jpg",
+                "alt": "Traffic Signs Screenshot 1"
+              },
+              {
+                "src": "assets/slidermobile/tf02.jpg",
+                "alt": "Traffic Signs Screenshot 2"
+              },
+              {
+                "src": "assets/slidermobile/tf03.jpg",
+                "alt": "Traffic Signs Screenshot 3"
+              },
+              {
+                "src": "assets/slidermobile/tf04.jpg",
+                "alt": "Traffic Signs Screenshot 4"
+              },
+              {
+                "src": "assets/slidermobile/tf05.jpg",
+                "alt": "Traffic Signs Screenshot 5"
+              }
             ],
             "carouselAutoplay": true,
             "details": [
@@ -82,332 +660,35 @@
                 ]
               }
             ],
-            "tech": ["Flutter", "Dart", "PHP", "Laravel", "Laravel Filament", "MySQL"]
-          }
-        ]
-      },
-      {
-        "title": "WEB APPLICATIONS",
-        "projects": [
-          {
-            "type": "website-list",
-            "title": "NUSA PENIDA TOURISM COMPANY PROFILES",
-            "image": "assets/web-compro/activitiespenidatour.pdf",
-            "links": [],
-            "details": [
-              {
-                "heading": "Project Overview:",
-                "paragraph": "A collection of 7 WordPress company profile websites built for tour & lifestyle operators around Nusa Penida, Bali, optimized for SEO performance, lead generation, and fast loading."
-              }
-            ],
-            "websites": [
-              { "name": "activitiespenidatour.com", "url": "https://activitiespenidatour.com/", "pdf": "assets/web-compro/activitiespenidatour.pdf" },
-              { "name": "gahingkarya.com", "url": "https://gahingkarya.com/", "pdf": "assets/web-compro/gahingkarya.pdf" },
-              { "name": "klingkingbeach.com", "url": "https://klingkingbeach.com/", "pdf": "assets/web-compro/klingkingbeach-com.pdf" },
-              { "name": "nusapenidacamping.com", "url": "https://nusapenidacamping.com/", "pdf": "assets/web-compro/nusapenidacamping.pdf" },
-              { "name": "nusapenidatattoo.com", "url": "https://nusapenidatattoo.com/", "pdf": "assets/web-compro/nusapenidatattoo.pdf" },
-              { "name": "penidatripgo.com", "url": "https://penidatripgo.com/", "pdf": "assets/web-compro/penidatripgo.pdf" },
-              { "name": "snorkelingpenida.com", "url": "https://snorkelingpenida.com/", "pdf": "assets/web-compro/snorkelingpenida.pdf" }
-            ],
-            "tech": ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "SEO Optimization"]
-          },
-          {
-            "type": "image-grid",
-            "title": "POS PRIMA KARYA TANI",
-            "image": "assets/pos-primakaryatani/dashboard.png",
-            "imageGrid": [
-              { "src": "assets/pos-primakaryatani/dashboard.png", "alt": "POS Dashboard" },
-              { "src": "assets/pos-primakaryatani/login.png", "alt": "POS Login Screen" }
-            ],
-            "links": [
-              { "icon": "bi-file-pdf", "label": "Homepage PDF", "url": "assets/pos-primakaryatani/homepage-primakaryatani.pdf" },
-              { "icon": "bi-file-pdf", "label": "Offline Mode PDF", "url": "assets/pos-primakaryatani/pos-mode-offline.pdf" }
-            ],
-            "carousel": [
-              { "src": "assets/pos-primakaryatani/dashboard.png", "alt": "POS Dashboard" },
-              { "src": "assets/pos-primakaryatani/login.png", "alt": "POS Login" }
-            ],
-            "carouselAutoplay": true,
-            "details": [
-              {
-                "heading": "Business Challenge:",
-                "paragraph": "CV. Prima Karya Tani needed a point of sale system with offline-first support for rural agricultural retail operations."
-              },
-              {
-                "heading": "Solution:",
-                "paragraph": "Full-featured offline-first POS web application with automatic transaction sync upon reconnecting, real-time inventory management, and multi-user role security.",
-                "list": [
-                  "Offline cashier transaction processing with IndexedDB sync",
-                  "Real-time sales dashboard and revenue metrics",
-                  "Automated inventory management & low-stock alerts",
-                  "Multi-role user authentication (Cashier, Manager, Admin)"
-                ]
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "PWA", "IndexedDB"]
-          },
-          {
-            "type": "iframe",
-            "title": "CLASSIC TETRIS GAME",
-            "image": "assets/tetris-cover.png",
-            "iframe": "tetris.html",
-            "iframeTitle": "Tetris Game Demo",
-            "meta": { "category": "WEB GAME", "year": "2025" },
-            "links": [
-              { "icon": "bi-play", "label": "PLAY GAME", "url": "tetris.html" },
-              { "icon": "bi-code-slash", "label": "VIEW SOURCE", "url": "tetris.html" }
-            ],
-            "description": "Classic Tetris game built from scratch using pure HTML5 Canvas, CSS3, and vanilla JavaScript with smooth piece controls and score tracking.",
-            "tech": ["HTML5 Canvas", "JavaScript ES6", "CSS3", "Game Logic", "DOM"]
-          },
-          {
-            "type": "iframe",
-            "title": "CLASSIC SNAKE GAME",
-            "image": "assets/snake-cover.png",
-            "iframe": "snake.html",
-            "iframeTitle": "Snake Game Demo",
-            "meta": { "category": "WEB GAME", "year": "2025" },
-            "links": [
-              { "icon": "bi-play", "label": "PLAY GAME", "url": "snake.html" },
-              { "icon": "bi-code-slash", "label": "VIEW SOURCE", "url": "snake.html" }
-            ],
-            "description": "Nostalgic Snake arcade game built with HTML5 Canvas featuring progressive difficulty, keyboard & mobile touch controls, and high-score tracking.",
-            "tech": ["HTML5 Canvas", "JavaScript ES6", "CSS3 Animations", "Mobile Optimization"]
-          },
-          {
-            "type": "image",
-            "title": "MELANJO: ONLINE STORE",
-            "image": "assets/tokoonline/admin.png",
-            "imageAlt": "Melanjo Online Store",
-            "links": [
-              { "icon": "bi-eye", "label": "Show More", "url": "melanjo.html" }
-            ],
-            "details": [
-              {
-                "heading": "E-commerce Development:",
-                "paragraph": "Full-featured SME online store built with Laravel 10, integrated with RajaOngkir API for real-time shipping calculation and secure checkout."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "RajaOngkir API", "Bootstrap", "jQuery"]
-          },
-          {
-            "type": "image",
-            "title": "ACCESSWASTE",
-            "image": "assets/accesswaste.png",
-            "imageAlt": "AccessWaste Australia",
-            "links": [
-              { "icon": "bi-globe", "label": "accesswaste.com.au", "url": "https://accesswaste.com.au/" }
-            ],
-            "details": [
-              {
-                "heading": "Waste Logistics Platform:",
-                "paragraph": "Digital waste management and online skipbin booking platform operating in Perth, Australia. Includes real-time quote generation, automated scheduling, and customer portals."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "Vue.js", "MySQL", "Bootstrap"]
-          },
-          {
-            "type": "image",
-            "title": "PANDOOIN",
-            "image": "assets/pandooin.png",
-            "imageAlt": "Pandooin Travel Marketplace",
-            "links": [
-              { "icon": "bi-globe", "label": "pandooin.com", "url": "https://pandooin.com/" }
-            ],
-            "details": [
-              {
-                "heading": "Travel Marketplace:",
-                "paragraph": "Modern travel package marketplace empowering travelers to search, customize, and book tour packages in Indonesia with reactive search filtering."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "Vue.js", "Inertia.js", "MySQL", "Tailwind CSS"]
-          },
-          {
-            "type": "image",
-            "title": "VILLAGE POPULATION SYSTEM",
-            "image": "assets/desa.png",
-            "imageAlt": "Village Population System",
-            "links": [],
-            "details": [
-              {
-                "heading": "Government Population System:",
-                "paragraph": "Centralized village demographic recording and reporting system for Indonesian local administration with data analytics and interactive charts."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap"]
-          },
-          {
-            "type": "image",
-            "title": "RESELLR",
-            "image": "assets/resellr.png",
-            "imageAlt": "Resellr Platform",
-            "links": [
-              { "icon": "bi-globe", "label": "resellr.id", "url": "https://resellr.id/" }
-            ],
-            "details": [
-              {
-                "heading": "SME Reseller Platform:",
-                "paragraph": "E-commerce reseller distribution system connecting SME suppliers with resellers, featuring automated order routing and Ipaymu payment gateway integration."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "Ipaymu API", "Bootstrap"]
-          },
-          {
-            "type": "image",
-            "title": "QRMENU: RESTAURANT APP",
-            "image": "assets/qrmenu.png",
-            "imageAlt": "QRMenu Restaurant System",
-            "links": [],
-            "details": [
-              {
-                "heading": "Digital Restaurant Menu:",
-                "paragraph": "Contactless QR code menu system allowing restaurant diners to view digital menus, filter dietary preferences, and place orders directly from their mobile phones."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "Bootstrap", "jQuery"]
-          },
-          {
-            "type": "image",
-            "title": "ASMOGPSKU: SHIPMENT DATA APP",
-            "image": "assets/asmo.png",
-            "imageAlt": "AsmoGPSKU",
-            "links": [
-              { "icon": "bi-globe", "label": "asmogpsku.com", "url": "https://asmogpsku.com/" }
-            ],
-            "details": [
-              {
-                "heading": "Shipment Tracking System:",
-                "paragraph": "Operational shipment logging and logistics monitoring app engineered for Astramotor Bali to replace error-prone manual spreadsheets."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "Bootstrap", "jQuery"]
-          },
-          {
-            "type": "image",
-            "title": "ASTRA MOTOR CATALOG",
-            "image": "assets/astrakatalog.png",
-            "imageAlt": "Astra Motor Spare Parts Catalog",
-            "links": [],
-            "details": [
-              {
-                "heading": "Spare Parts Catalog System:",
-                "paragraph": "Comprehensive Honda motorcycle spare parts catalog for Astramotor dealers with instant part lookup, stock availability, and ordering workflows."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "MySQL", "Bootstrap", "jQuery"]
-          },
-          {
-            "type": "image",
-            "title": "ARCTURUS: HOTEL BOOKING",
-            "image": "assets/arcturus.png",
-            "imageAlt": "Arcturus Hotel Booking System",
-            "links": [
-              { "icon": "bi-github", "label": "arcturus.my.id", "url": "https://github.com/krisnaxyoga/arcturus" }
-            ],
-            "details": [
-              {
-                "heading": "Hotel Booking Application:",
-                "paragraph": "Travel agent hotel reservation platform built with Laravel, Inertia.js, and React.js for searching room availability, comparing rates, and issuing vouchers."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "React.js", "Inertia.js", "MySQL", "Bootstrap"]
-          },
-          {
-            "type": "image",
-            "title": "MULIA PRIVILEGE",
-            "image": "assets/muliapr.png",
-            "imageAlt": "Mulia Privilege Loyalty App",
-            "links": [
-              { "icon": "bi-eye", "label": "Show More", "url": "muliaprivileges.html" }
-            ],
-            "details": [
-              {
-                "heading": "Luxury Resort Loyalty Platform:",
-                "paragraph": "Guest loyalty and reward application for The Mulia 5-star resort, featuring point earning algorithms, reward redemptions, and personalized guest services."
-              }
-            ],
-            "tech": ["Next.js", "Node.js", "Express.js", "MySQL", "Bootstrap"]
-          }
-        ]
-      },
-      {
-        "title": "UI & UX DESIGN",
-        "projects": [
-          {
-            "type": "image-only",
-            "title": "TJS SHUTTLE UI/UX",
-            "image": "assets/tjsshuttle.png",
-            "imageAlt": "TJS Shuttle UI/UX Design",
-            "links": [
-              { "icon": "bi-palette", "label": "Figma Design", "url": "https://www.figma.com/design/WjGEfxgKkn7DM9E186agKF/Tj's-Shuttle-homepage?node-id=54-2&t=z0Nu9tGG3EmhKBlB-1" }
-            ],
-            "details": [
-              {
-                "heading": "Shuttle Booking UI/UX Design:",
-                "paragraph": "Figma design system and user interface prototype for shuttle transportation booking service, focusing on clean user flows and mobile responsiveness."
-              }
-            ],
-            "tech": ["Figma", "UI Design", "UX Research", "Prototyping"]
-          },
-          {
-            "type": "image-only",
-            "title": "PORTFOLIO UI/UX",
-            "image": "assets/myprorto.png",
-            "imageAlt": "Portfolio UI/UX Design",
-            "links": [
-              { "icon": "bi-palette", "label": "Figma Design", "url": "https://www.figma.com/design/pmjJOyQO2KHmnDQXdLAyaB/my_portofolio?node-id=0-1&t=fdM5wX5T5k7UWP25-1" }
-            ],
-            "details": [
-              {
-                "heading": "Personal Portfolio Design System:",
-                "paragraph": "Figma design system layout exploring typography scales, dark aesthetic UI components, and case study presentations."
-              }
-            ],
-            "tech": ["Figma", "UI Design", "Visual System"]
-          }
-        ]
-      },
-      {
-        "title": "AI & INFRASTRUCTURE TOOLS",
-        "projects": [
-          {
-            "type": "image",
-            "title": "AI PBN & SERVER MONITORING DASHBOARD",
-            "image": "assets/tokoonline/admin.png",
-            "imageAlt": "AI PBN & Server Monitoring Dashboard",
-            "links": [],
-            "details": [
-              {
-                "heading": "AI-Powered Infrastructure Dashboard:",
-                "paragraph": "Centralized control panel integrating Google Search Console API and Google Gemini API to automatically monitor PBN site indexation, domain authority, and traffic anomaly detection."
-              }
-            ],
-            "tech": ["PHP", "Laravel", "Google Gemini API", "GSC API", "MySQL", "REST API"]
-          },
-          {
-            "type": "image",
-            "title": "MULIA PMS REST API",
-            "image": "assets/pmsapidoc.png",
-            "imageAlt": "Mulia PMS API",
-            "links": [],
-            "details": [
-              {
-                "heading": "Property Management REST API:",
-                "paragraph": "High-performance Node.js and Express.js REST API providing secure endpoints for hotel PMS reservations, room status updates, and guest authentication."
-              }
-            ],
-            "tech": ["Node.js", "Express.js", "MySQL", "REST API", "JWT"]
+            "tech": [
+              "Flutter",
+              "Dart",
+              "PHP",
+              "Laravel",
+              "Laravel Filament",
+              "MySQL"
+            ]
           }
         ]
       }
     ]
   };
-
   let allProjectsList = [];
   let currentFilter = 'all';
   let searchQuery = '';
 
   const escapeAttr = (s) => String(s ?? '').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+  // PDFs open in the in-site viewer instead of a new tab; everything else
+  // (live sites, GitHub, Figma) keeps opening in a new tab as before.
+  function resolveLinkTarget(url, label) {
+    const isPdf = typeof url === 'string' && /\.pdf(\?.*)?$/i.test(url) && !/^[a-z]+:/i.test(url);
+    if (isPdf) {
+      const viewerUrl = 'pdf-viewer.html?file=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(label || 'Document');
+      return { href: viewerUrl, target: '_self' };
+    }
+    return { href: url, target: '_blank' };
+  }
 
   // Flatten sections data into a list with normalized fields
   function normalizeData(rawSections) {
@@ -472,11 +753,14 @@
 
   function renderCardActionLinks(links) {
     if (!links || !links.length) return '';
-    return links.map(l => `
-      <a href="${escapeAttr(l.url)}" target="_blank" rel="noopener" class="project-link" onclick="event.stopPropagation();">
+    return links.map(l => {
+      const resolved = resolveLinkTarget(l.url, l.label);
+      return `
+      <a href="${escapeAttr(resolved.href)}" target="${resolved.target}" rel="noopener" class="project-link" onclick="event.stopPropagation();">
         <i class="bi ${escapeAttr(l.icon)}"></i> ${l.label}
       </a>
-    `).join('');
+    `;
+    }).join('');
   }
 
   function renderCard(p) {
@@ -643,16 +927,19 @@
         </div>
       `;
     } else if (project.websites && project.websites.length) {
-      const siteCards = project.websites.map(w => `
+      const siteCards = project.websites.map(w => {
+        const pdfResolved = w.pdf ? resolveLinkTarget(w.pdf, w.name + ' — PDF Spec') : null;
+        return `
         <div style="background:var(--p-bg-soft);border:1px solid var(--p-border);border-radius:10px;padding:1rem;display:flex;flex-direction:column;gap:.4rem;">
           <a href="${escapeAttr(w.url)}" target="_blank" rel="noopener" style="font-weight:700;font-size:.95rem;text-decoration:none;">
             <i class="bi bi-globe"></i> ${w.name}
           </a>
-          ${w.pdf ? `<a href="${escapeAttr(w.pdf)}" target="_blank" rel="noopener" class="project-link" style="font-size:.8rem;">
+          ${pdfResolved ? `<a href="${escapeAttr(pdfResolved.href)}" target="${pdfResolved.target}" rel="noopener" class="project-link" style="font-size:.8rem;">
             <i class="bi bi-file-pdf"></i> View PDF Spec
           </a>` : ''}
         </div>
-      `).join('');
+      `;
+      }).join('');
       mediaHtml = `
         <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));gap:1rem;">
           ${siteCards}
@@ -702,11 +989,14 @@
     // Links buttons
     const linksHtml = project.links && project.links.length ? `
       <div class="modal-actions">
-        ${project.links.map(l => `
-          <a href="${escapeAttr(l.url)}" target="_blank" rel="noopener" class="project-link" style="padding: 8px 16px; font-size: 0.9rem;">
+        ${project.links.map(l => {
+          const resolved = resolveLinkTarget(l.url, l.label);
+          return `
+          <a href="${escapeAttr(resolved.href)}" target="${resolved.target}" rel="noopener" class="project-link" style="padding: 8px 16px; font-size: 0.9rem;">
             <i class="bi ${escapeAttr(l.icon)}"></i> ${l.label}
           </a>
-        `).join('')}
+        `;
+        }).join('')}
       </div>
     ` : '';
 

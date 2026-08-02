@@ -80,8 +80,38 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      <!-- Projects loaded dynamically from data/projects.json -->
-      <div id="projects-root"></div>
+      <!-- Projects loaded dynamically from data/projects.json via js/projects-renderer.js -->
+      <div class="projects-controls fade-in">
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="web" type="button">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile" type="button">Mobile Apps</button>
+          <button class="filter-btn" data-filter="design" type="button">UI/UX Design</button>
+          <button class="filter-btn" data-filter="ai" type="button">AI & Infrastructure</button>
+        </div>
+        <div class="projects-search-wrap">
+          <i class="bi bi-search"></i>
+          <input type="text" id="project-search" class="projects-search-input" placeholder="Search projects, tech, category...">
+        </div>
+      </div>
+
+      <div class="projects-counter-badge" id="projects-counter">Loading projects&hellip;</div>
+
+      <div class="featured-projects-grid" id="projects-grid"></div>
+
+      <!-- Project Detail Modal -->
+      <div class="project-modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="project-modal-dialog">
+          <div class="project-modal-header">
+            <div class="project-modal-header-left">
+              <span class="project-modal-badge"></span>
+              <h3 class="project-modal-title"></h3>
+            </div>
+            <button class="project-modal-close" type="button" aria-label="Close">&times;</button>
+          </div>
+          <div class="project-modal-body"></div>
+        </div>
+      </div>
 
       <!-- Quick Stats Bar -->
       <div class="projects-stats fade-in">
@@ -166,44 +196,6 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Load projects from data/projects.json
-    async function loadProjects() {
-      const container = document.getElementById('projects-root');
-      if (!container) return;
-      try {
-        const scriptEl = document.currentScript || document.querySelector('script[src$="projects-renderer.js"]');
-        const url = new URL('../data/projects.json', scriptEl?.src || window.location.href).href;
-        const res = await fetch(url, { cache: 'no-cache' });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        const projectsContainer = document.querySelector('.featured-projects-grid');
-        if (projectsContainer) {
-          projectsContainer.style.display = 'none';
-        }
-        container.innerHTML = renderProjectsHtml(data);
-        initCarousels(container);
-        initVideoFallback(container);
-        initFadeIn(container);
-      } catch (err) {
-        console.error('Failed to load projects:', err);
-      }
-    }
-
-    // Expose render functions for projects-renderer.js to use
-    window.PortfolioRenderers = window.PortfolioRenderers || {};
-    window.PortfolioRenderers.renderProjects = function(data, container) {
-      container.innerHTML = renderProjectsHtml(data);
-      initCarousels(container);
-      initVideoFallback(container);
-      initFadeIn(container);
-    };
-
-    // Call loadProjects once DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', loadProjects);
-    } else {
-      loadProjects();
-    }
   </script>
 
   <script src="js/projects-renderer.js"></script>
